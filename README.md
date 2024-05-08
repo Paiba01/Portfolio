@@ -1,8 +1,5 @@
 # Personal Portfolio
 
-![Captura desde 2024-01-08 17-20-22](https://github.com/Joselete77/Portfolio/assets/71654543/d9bd6257-c376-44bd-b8a1-8cc7de33a368)
-
-
 This is my personal portfolio website created using HTML, CSS, JavaScript, Node.js, and Express.
 
 ## Description
@@ -31,11 +28,3 @@ To view the portfolio, simply open the `index.html` file in a web browser.
 
 Feel free to explore the code to see how it was built, and customize it to suit your own needs.
 
-## Website
-
-Visit the [portfolio website](https://portafoliojoseangel.netlify.app/) to explore my work and learn more about me.
-
-
-## License
-
-© 2024 Jose Angel Dorado. All rights reserved. This work is protected by copyright laws and is provided for personal and non-commercial use only. Any unauthorized reproduction, distribution, or modification without express and written consent from the author is strictly prohibited.
