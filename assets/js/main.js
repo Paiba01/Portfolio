@@ -134,7 +134,7 @@
 /** Google Meet */
 
   function scheduleMeeting() {
-    window.open('https://joseangeldorado.youcanbook.me', '_blank');
+    window.open('https://paiba.youcanbook.me/', '_blank');
   }
 
   // Add a click event to the button
@@ -158,34 +158,34 @@ var translations = {
     scheduleMeeting: "Programar Reunión",
     downloadCV: "Descargar CV",
     discoverMore: "Descubre Más",
-    name: "José Ángel Dorado",
+    name: "Pablo Ibañez Fdez-Delgado",
     developerDescription:
-      "Soy un desarrollador web experimentado en la parte del backend, especializado en tecnologías como Python y Java. Siempre estoy actualizado con las últimas tendencias tecnológicas para garantizar que mis soluciones estén a la vanguardia.",
+      "Soy un desarrollador web fullstack, especializado en backend en tecnologías como PHP y NodeJS y en frontend tecnologías como Html/Css/Javascript y React. Siempre trato de estar actualizado con las últimas tendencias tecnológicas para garantizar que mis soluciones sean adecuadas.",
     aboutMe:
-      "Hola, soy José Ángel, un apasionado desarrollador web con un historial comprobado de éxitos en proyectos personales y contribuciones notables en el desarrollo web de una importante cadena de hoteles. Mi dedicación y habilidades técnicas me han permitido destacarme en el campo, y siempre estoy listo para asumir nuevos desafíos.",
+      "Hola, soy Pablo Ibañez, un apasionado desarrollador web full stack con experiencia comprobada en el éxito de proyectos propios y en contribuciones clave al desarrollo digital de una reconocida empresa de logística y transporte. Mi habilidad para desenvolverme con soltura tanto en el front-end como en el back-end me permite adaptarme con facilidad a diferentes entornos y desafíos, siempre buscando soluciones innovadoras y eficaces.",
     footerText:
       "Todos los derechos reservados",
     paragraph1: 
-      "Hola, soy José Ángel, un apasionado desarrollador web con un historial comprobado de éxitos en proyectos personales y contribuciones notables en el desarrollo web de una importante cadena de hoteles. Mi dedicación y habilidades técnicas me han permitido destacarme en el campo, y siempre estoy listo para asumir nuevos desafíos.",
+      "Hola, soy Pablo Ibañez, un apasionado desarrollador web full stack con experiencia comprobada en el éxito de proyectos propios y en contribuciones clave al desarrollo digital de una reconocida empresa de logística y transporte. Mi habilidad para desenvolverme con soltura tanto en el front-end como en el back-end me permite adaptarme con facilidad a diferentes entornos y desafíos, siempre buscando soluciones innovadoras y eficaces.",
     paragraph2: 
-      "En mi carrera, he demostrado un enfoque proactivo y un razonamiento sólido, lo que me ha permitido enfrentar diversos problemas y encontrar soluciones efectivas. Soy conocido por mi capacidad para trabajar de manera independiente, asumir la responsabilidad y liderar iniciativas que generen un impacto positivo.",
+      "En mi trayectoria, he destacado por mi enfoque proactivo y mi capacidad de razonamiento lógico, cualidades que me han permitido abordar problemas complejos y encontrar soluciones eficientes. Me caracterizo por mi habilidad para coordinar equipos de manera efectiva, fomentando la colaboración, aportando ideas innovadoras y valorando las perspectivas de los demás para alcanzar los mejores resultados.",
     paragraph3: 
-      "Además de mi experiencia técnica, me considero una persona creativa y versátil. Estoy constantemente explorando nuevas tecnologías y tendencias en el mundo del desarrollo web para asegurarme de estar al tanto de las últimas innovaciones. Mi enfoque flexible y mente abierta me permite adaptarme rápidamente a los cambios y encontrar soluciones innovadoras para los problemas que enfrento.",
+      "Además de mi experiencia técnica, me considero una persona creativa y versátil. Aunque mi especialidad está en el backend, disfruto profundamente trabajar en aspectos de diseño, aportando valor con ideas frescas y funcionales. Estoy siempre explorando nuevas tecnologías y tendencias en el desarrollo web para mantenerme actualizado con las últimas innovaciones. Mi enfoque flexible y mi mente abierta me permiten adaptarme rápidamente a los cambios y proponer soluciones creativas a los desafíos.",
     paragraph4: 
-      "En mi trabajo anterior en el desarrollo web para una cadena de hoteles, contribuí significativamente al diseño y la implementación de soluciones web efectivas que mejoraron la experiencia del usuario y aumentaron la visibilidad en línea de la marca. Este logro me impulsó a embarcarme en mi propio proyecto personal, donde estoy aplicando mi experiencia para crear algo único y emocionante.",
+      "En mi trabajo actual en el desarrollo web para una empresa líder en el sector de logística de transportes, me encargo de proporcionar soluciones simples y de alta calidad, siempre con el foco en mejorar la experiencia del usuario. Este enfoque ha sido clave para optimizar procesos y fortalecer la interacción digital con los clientes, consolidando aún más nuestra posición como referentes en el mercado.",
     paragraph5: 
-      "Mis habilidades no solo se limitan a la programación; también valoro y fomento un ambiente de trabajo colaborativo. Creo en la importancia de trabajar en equipo y compartir conocimientos para lograr resultados excepcionales. Mi actitud positiva y mi capacidad para comunicarme efectivamente hacen que sea fácil colaborar conmigo en proyectos complejos y desafiantes.",
+      "Mis habilidades van más allá de la programación; también valoro profundamente el trabajo en equipo y la colaboración. Creo en el poder de compartir conocimientos y aprender juntos para alcanzar resultados excepcionales. Mi actitud positiva y mi capacidad para comunicarme de manera clara y efectiva facilitan la colaboración en proyectos complejos, asegurando que todos los miembros del equipo estén alineados y motivados hacia el mismo objetivo.",
     paragraph6: 
-      "En resumen, soy un desarrollador web apasionado, orientado a resultados y listo para enfrentar cualquier desafío que se presente. Siempre estoy en busca de oportunidades emocionantes para seguir aprendiendo y creciendo en el mundo del desarrollo web.",
+      "En resumen, soy un desarrollador web apasionado, listo para enfrentar cualquier desafío que se presente. Siempre estoy en busca de oportunidades emocionantes para seguir aprendiendo y creciendo en el mundo del desarrollo web.",
     databasesTitle: "Bases de datos",
-    taxCapitalAsesoresTitle: "TAX Capital Asesores",
-    taxCapitalAsesoresLocation: "Remoto",
-    taxCapitalAsesoresJobTitle: "Full-Stack",
-    taxCapitalAsesoresDescription: "Lideré un proyecto utilizando tecnologías como Django, Python, AWS, y MySQL, diseñando y desarrollando una aplicación web desde cero, destacando mi experiencia en la implementación de Leaflet para la generación de mapas interactivos. Además, inicié la creación de una aplicación móvil nativa de Android utilizando Kotlin.",
-    sohoBoutiqueHotelsTitle: "Soho Boutique Hotels",
-    sohoBoutiqueHotelsLocation: "Málaga",
-    sohoBoutiqueHotelsJobTitle: "Webmaster",
-    sohoBoutiqueHotelsDescription: "Me desempeñé como profesional especializado en la administración, mantenimiento y optimización de sitios web. Estuve colaborando en diversos proyectos, resolviendo problemas de manera eficiente y atendiendo incidencias con enfoque proactivo. Mi experiencia incluye el desarrollo de aplicaciones mediante Power Automate y Power Apps, así como el mantenimiento y normalización de bases de datos SQL Server.",
+    eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarLocation: "Hibrido",
+    eurotransportcarJobTitle: "Full-Stack",
+    eurotransportcarDescription: "Formo parte del equipo de desarrollo encargado de crear y mantener el producto principal de una empresa líder en logística de transportes. En este rol, trabajo con tecnologías como HTML, Bootstrap, PHP y MySQL, desarrollando soluciones eficientes que optimizan procesos y mejoran la experiencia del usuario. Además, he contribuido al diseño y mantenimiento de interfaces intuitivas y funcionales, asegurando un producto de alta calidad que satisface las necesidades del mercado.",
+    eurotransportcarPracticesTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarPracticesLocation: "Hibrido",
+    eurotransportcarPracticesJobTitle: "Full-Stack (Prácticas)",
+    eurotransportcarPracticesDescription: "Inicié mi carrera profesional realizando mi formación en la empresa líder en logística de transportes, donde tuve la oportunidad de explorar y trabajar con tecnologías más allá de lo aprendido en mi formación universitaria. Durante este período, amplié mis conocimientos prácticos y adquirí experiencia real en el desarrollo y mantenimiento de soluciones web, lo que me permitió consolidar habilidades clave y entender mejor las necesidades tecnológicas del sector.",
     universidadDeCordobaTitle: "Universidad de Córdoba",
     universidadDeCordobaLocation: "Córdoba",
     universidadDeCordobaJobTitle: "Ingeniería Informática",
@@ -203,8 +203,8 @@ var translations = {
     institutoNacionalDeCiberseguridadLocation: "Remoto",
     institutoNacionalDeCiberseguridadJobTitle: "Ciberseguridad Teletrabajando",
     institutoNacionalDeCiberseguridadDescription: "En el curso de Ciberseguridad en el Teletrabajo, me sumergí en las estrategias esenciales para proteger la información en entornos remotos. Desde técnicas de prevención de amenazas hasta prácticas de seguridad digital, adquirí conocimientos sólidos para salvaguardar la integridad de los datos en el mundo del teletrabajo.",
-    hogumaTitle: "Hoguma",
-    hogumaDescription: "Aplicación web para la gestión de huéspedes de hotel",
+    arenaAllyTitle: "ArenaAlly",
+    arenaAllyDescription: "Aplicación web para la gestión de competiciones de la Federación de Balonmano",
     wordleTitle: "Wordle",
     wordleDescription: "Aplicación web del famoso juego de adivinar palabras",
     ucoDexTitle: "UcoDex",
@@ -223,8 +223,8 @@ var translations = {
     portfolioDescription: "Proyecto de este portfolio",    
     contactSubtitle: "¿Tienes un proyecto en mente? ¡Contáctame desde aquí!",
     contactInfoTitle: "Mis datos",
-    contactPhone: "Teléfono: 635 720 308",
-    contactEmail: "Correo electrónico: doradojoseangel@gmail.com",
+    contactPhone: "Teléfono: 693 328 312",
+    contactEmail: "Correo electrónico: paiba2012@gmail.com",
     contactFormTitle: "Envíame un mensaje",
     nombrePlaceholder: "Nombre",
     correoPlaceholder: "Correo electrónico",
@@ -247,68 +247,48 @@ var translations = {
     scheduleMeeting: "Schedule Meeting",
     downloadCV: "Download CV",
     discoverMore: "Discover More",
-    name: "José Ángel Dorado",
+    name: "Pablo Ibañez Fdez-Delgado",
     developerDescription:
       "I am an experienced backend web developer, specialized in technologies like Python and Java. I stay updated with the latest technological trends to ensure my solutions are at the forefront.",
     aboutMe:
-      "Hello, I'm José Ángel, a passionate web developer with a proven track record of success in personal projects and significant contributions to web development for a major hotel chain. My dedication and technical skills have allowed me to stand out in the field, and I'm always ready for new challenges.",
+      "Hello, I'm Pablo Ibañez, a passionate full stack web developer with proven experience in the success of my own projects and in key contributions to the digital development of a renowned logistics and transport company. My ability to be fluent in both front-end and back-end allows me to easily adapt to different environments and challenges, always looking for innovative and effective solutions.",
     footerText:
       "All rights reserved",
     paragraph1: 
-      "Hello, I'm José Ángel, a passionate web developer with a proven track record of success in personal projects and significant contributions to web development for a major hotel chain. My dedication and technical skills have allowed me to stand out in the field, and I'm always ready for new challenges.",
+      "Hi, I'm Pablo Ibañez, a passionate full stack web developer with proven experience in the success of my own projects and in key contributions to the digital development of a renowned logistics and transport company. My ability to be fluent in both front-end and back-end allows me to easily adapt to different environments and challenges, always looking for innovative and effective solutions.",
     paragraph2: 
-      "In my career, I have demonstrated a proactive approach and solid reasoning, enabling me to tackle diverse problems and find effective solutions. I am known for my ability to work independently, take responsibility, and lead initiatives that have a positive impact.",
+      "Throughout my career, I have stood out for my proactive approach and logical reasoning skills, qualities that have enabled me to tackle complex problems and find efficient solutions. I am known for my ability to coordinate teams effectively, fostering collaboration, contributing innovative ideas and valuing the perspectives of others to achieve the best results.",
     paragraph3: 
-      "In addition to my technical experience, I consider myself a creative and versatile person. I am constantly exploring new technologies and trends in the world of web development to ensure I stay informed about the latest innovations. My flexible approach and open mind allow me to adapt quickly to changes and find innovative solutions to the challenges I face.",
+      "In addition to my technical expertise, I consider myself a creative and versatile person. Although my speciality is in the backend, I deeply enjoy working on design aspects, adding value with fresh and functional ideas. I am always exploring new technologies and trends in web development to keep up to date with the latest innovations. My flexible approach and open mind allow me to adapt quickly to changes and come up with creative solutions to challenges.",
     paragraph4: 
-      "In my previous work in web development for a hotel chain, I significantly contributed to the design and implementation of effective web solutions that improved the user experience and increased the brand's online visibility. This achievement inspired me to embark on my own personal project, where I am applying my experience to create something unique and exciting.",
+      "In my current work in web development for a leading company in the transport logistics sector, I am responsible for providing simple and high quality solutions, always with a focus on improving the user experience. This approach has been key to optimising processes and strengthening digital interaction with customers, further consolidating our position as a market leader.",
     paragraph5: 
       "My skills are not limited to programming alone; I also value and promote a collaborative work environment. I believe in the importance of teamwork and knowledge-sharing to achieve exceptional results. My positive attitude and effective communication skills make it easy to collaborate with me on complex and challenging projects.",
     paragraph6: 
-      "In summary, I am a passionate web developer, results-oriented, and ready to face any challenges that come my way. I am always on the lookout for exciting opportunities to continue learning and growing in the world of web development.",
+      "In short, I am a passionate web developer, ready to take on any challenge that comes my way. I am always looking for exciting opportunities to keep learning and growing in the world of web development.",
     databasesTitle: "Databases",
-    taxCapitalAsesoresTitle: "TAX Capital Asesores",
-    taxCapitalAsesoresLocation: "Remote",
-    taxCapitalAsesoresJobTitle: "Full-Stack",
-    taxCapitalAsesoresDescription: 
-      "I led a project using technologies such as Django, Python, AWS, and MySQL, designing and developing a web application from scratch. I highlighted my experience in implementing Leaflet for interactive map generation. Additionally, I initiated the creation of a native Android mobile application using Kotlin.",
-    sohoBoutiqueHotelsTitle: "Soho Boutique Hotels",
-    sohoBoutiqueHotelsLocation: "Málaga",
-    sohoBoutiqueHotelsJobTitle: "Webmaster",
-    sohoBoutiqueHotelsDescription: 
-      "I worked as a specialized professional in the administration, maintenance, and optimization of websites. I collaborated on various projects, efficiently solving problems and addressing incidents with a proactive approach. My experience includes developing applications using Power Automate and Power Apps, as well as maintaining and normalizing SQL Server databases.",
+    eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarLocation: "Hybrid",
+    eurotransportcarJobTitle: "Full-Stack",
+    eurotransportcarDescription: 
+      "I am part of the development team in charge of creating and maintaining the core product of a leading transport logistics company. In this role, I work with technologies such as HTML, Bootstrap, PHP and MySQL, developing efficient solutions that optimize processes and improve the user experience. In addition, I have contributed to the design and maintenance of intuitive and functional interfaces, ensuring a high quality product that meets the needs of the market.",
+    eurotransportcarPracticesTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarPracticesLocation: "Hybrid",
+    eurotransportcarPracticesJobTitle: "Full-Stack (Internship)",
+    eurotransportcarPracticesDescription: 
+      "I started my professional career training at the leading transport logistics company, where I had the opportunity to explore and work with technologies beyond what I had learnt in my university education. During this period, I broadened my practical knowledge and gained real-world experience in developing and maintaining web solutions, which allowed me to consolidate key skills and better understand the technological needs of the sector.",
     universidadDeCordobaTitle: "University of Córdoba",
     universidadDeCordobaLocation: "Córdoba",
     universidadDeCordobaJobTitle: "Computer Engineering",
     universidadDeCordobaYear: "2023",
     universidadDeCordobaDescription: 
       "During my university years, I focused on software engineering, collaborating in agile environments with Scrum and Trello. I developed skills in backend technologies such as Java, PHP, or Python, and frontend technologies with CSS, HTML, and JavaScript. I also gained experience in managing databases like MySQL or MongoDB. This solid education prepared me to tackle complex challenges with creativity and efficiency.",
-    universidadComplutenseDeMadridTitle: "Complutense University of Madrid",
-    universidadComplutenseDeMadridLocation: "Remote",
-    universidadComplutenseDeMadridJobTitle: "Mobile App Development",
-    universidadComplutenseDeMadridYear: "2022",
-    universidadComplutenseDeMadridDescription: 
-      "In the course, absorbing key knowledge and tools, I delved into mobile app development. From creating attractive interfaces to implementing dynamic features, I acquired essential skills that now enable me to bring innovative ideas to life in the world of mobile apps.",
-    universidadDeAlicanteTitle: "University of Alicante",
-    universidadDeAlicanteLocation: "Remote",
-    universidadDeAlicanteJobTitle: "Introduction to Web Development",
-    universidadDeAlicanteDescription: 
-      "In the Introduction to Web Development course, I acquired essential foundations for building web experiences. I explored key concepts and immersed myself in indispensable tools like HTML, CSS, and JavaScript.",
-    institutoNacionalDeCiberseguridadTitle: "National Institute of Cybersecurity",
-    institutoNacionalDeCiberseguridadLocation: "Remote",
-    institutoNacionalDeCiberseguridadJobTitle: "Teleworking Cybersecurity",
-    institutoNacionalDeCiberseguridadDescription: 
-      "In the Teleworking Cybersecurity course, I delved into essential strategies to protect information in remote environments. From threat prevention techniques to digital security practices, I acquired solid knowledge to safeguard data integrity in the teleworking world.",
-    hogumaTitle: "Hoguma",
-    hogumaDescription: "Web application for hotel guest management",
+    arenaAllyTitle: "ArenaAlly",
+    arenaAllyDescription: "Web application for handball Federation competitions management",
     wordleTitle: "Wordle",
     wordleDescription: "Web application of the famous word guessing game",
     ucoDexTitle: "UcoDex",
     ucoDexDescription: "Mobile application of a Pokémon encyclopedia",
-    gestorDeCriticasTitle: "Review Manager",
-    gestorDeCriticasDescription: "Web application for managing reviews",
-    calculadoraTitle: "Calculator",
-    calculadoraDescription: "Desktop application of a calculator",
     editorTitle: "Editor",
     editorDescription: "Desktop application of a text editor",
     adivinarRefranesTitle: "Guess the Proverbs",
@@ -319,8 +299,8 @@ var translations = {
     portfolioDescription: "Project of this portfolio",
     contactSubtitle: "Do you have a project in mind? Contact me from here!",
     contactInfoTitle: "My data",
-    contactPhone: "Phone: 635 720 308",
-    contactEmail: "Email: doradojoseangel@gmail.com",
+    contactPhone: "Phone: 693 328 312",
+    contactEmail: "Email: paiba2012@gmail.com",
     contactFormTitle: "Send me a message",
     nombrePlaceholder: "Name",
     correoPlaceholder: "Email",
