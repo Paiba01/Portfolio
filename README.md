@@ -1,5 +1,6 @@
 # Personal Portfolio
 
+![image](https://github.com/user-attachments/assets/85c51cb3-52fe-463a-b571-013eacae69d9)
 
 
 
@@ -33,7 +34,7 @@ Feel free to explore the code to see how it was built, and customize it to suit 
 
 ## Website
 
-Visit the [portfolio website](https://portafoliojoseangel.netlify.app/) to explore my work and learn more about me.
+Visit the [portfolio website](https://portfoliopaiba.netlify.app/) to explore my work and learn more about me.
 
 
 ## License
