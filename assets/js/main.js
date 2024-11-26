@@ -119,7 +119,7 @@
 /** Download CV */
 
   function downloadCV() {
-      var pathCV = 'https://drive.google.com/uc?export=download&id=1SVzLa_j74mxdS2QHvs_gKkqj6IYObVKU';
+      var pathCV = 'https://drive.google.com/uc?export=download&id=1JtrbqqTJLEkd0RINL8s95RgzZxriV0V8';
       var linkTemp = document.createElement('a');
 
       linkTemp.href = pathCV;
