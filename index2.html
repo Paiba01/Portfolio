@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <title>Portfolio de Pablo | Desarrollador y Programador Web</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">&lt;/Paiba&gt;</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link" data-i18n="home">Inicio</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link" data-i18n="about">Sobre mí</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#trajectory" class="nav-link" data-i18n="trajectory">Trayectoria</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link" data-i18n="projects">Proyectos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link" data-i18n="contact">Contacto</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list nav-button-responsive">
+                    <button class="btn" onclick="toggleLanguage()"><span data-i18n="language">English</span> <i class="uil uil-language"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" onclick="toggleLanguage()"><span data-i18n="language">English</span> <i class="uil uil-language"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Pablo Ibañez</span>
+            </div>
+            <div class="featured-name">
+                <p><span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p data-i18n="developerDescription">Soy un desarrollador web enfocado en la parte del backend, especializado en tecnologías como PHP y NestJS. Me encanta diseñar y si hablamos de Frontend mis especialidades son Html y React  Mi objetivo es aportar soluciones con la mayor calidad en mi trabajo </p>
+            </div>            
+            <div class="featured-text-btn">
+                <button class="btn" id="scheduleMeetingBtn"><span data-i18n="scheduleMeeting">Programar Reunión</span> <i class="uil uil-meeting-board"></i></button>
+                <button class="btn" onclick="downloadCV()"><span data-i18n="downloadCV">Descargar CV</span> <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.linkedin.com/in/pablo-iba%C3%B1ez-fern%C3%A1ndez-delgado-39039823b/"><i class="uil uil-linkedin-alt" style="font-size: 20px;"></i></a></div>
+                <div class="icon"><a href="https://github.com/Paiba01"><i class="uil uil-github-alt" style="font-size: 20px;"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/paiba-lg-img.png" alt="Profile">
+            </div>
+          </div>
+          
+          <div class="scroll-icon-box" >
+            <a href="#about" class="scroll-btn" style="margin-bottom: 2em;">
+                <i class="uil uil-sort"></i>
+                <p data-i18n="discoverMore">Desliza!</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header" style="margin-bottom:2em;">
+            <h1 data-i18n="about">Sobre mí</h1>
+          </div>
+        <div class="row">
+            <div class="about-info">
+                <div class="mb-4">
+                    <p data-i18n="paragraph1">Hola, soy Pablo Ibañez, un apasionado desarrollador web full stack con experiencia comprobada en el éxito de proyectos propios y en contribuciones clave al desarrollo digital de una reconocida empresa de logística y transporte. Mi habilidad para desenvolverme con soltura tanto en el front-end como en el back-end me permite adaptarme con facilidad a diferentes entornos y desafíos, siempre buscando soluciones innovadoras y eficaces.</p>
+                    
+                    <p data-i18n="paragraph2">En mi trayectoria, he destacado por mi enfoque proactivo y mi capacidad de razonamiento lógico, cualidades que me han permitido abordar problemas complejos y encontrar soluciones eficientes. Me caracterizo por mi habilidad para coordinar equipos de manera efectiva, fomentando la colaboración, aportando ideas innovadoras y valorando las perspectivas de los demás para alcanzar los mejores resultados.</p>
+                    
+                    <p data-i18n="paragraph3">Además de mi experiencia técnica, me considero una persona creativa y versátil. Aunque mi especialidad está en el backend, disfruto profundamente trabajar en aspectos de diseño, aportando valor con ideas frescas y funcionales. Estoy siempre explorando nuevas tecnologías y tendencias en el desarrollo web para mantenerme actualizado con las últimas innovaciones. Mi enfoque flexible y mi mente abierta me permiten adaptarme rápidamente a los cambios y proponer soluciones creativas a los desafíos.</p>
+                    
+                    <p data-i18n="paragraph4">En mi trabajo actual en el desarrollo web para una empresa líder en el sector de logística de transportes, me encargo de proporcionar soluciones simples y de alta calidad, siempre con el foco en mejorar la experiencia del usuario. Este enfoque ha sido clave para optimizar procesos y fortalecer la interacción digital con los clientes, consolidando aún más nuestra posición como referentes en el mercado.</p>
+                    
+                    <p data-i18n="paragraph5">Mis habilidades van más allá de la programación; también valoro profundamente el trabajo en equipo y la colaboración. Creo en el poder de compartir conocimientos y aprender juntos para alcanzar resultados excepcionales. Mi actitud positiva y mi capacidad para comunicarme de manera clara y efectiva facilitan la colaboración en proyectos complejos, asegurando que todos los miembros del equipo estén alineados y motivados hacia el mismo objetivo.</p>
+                    
+                    <!-- <p data-i18n="paragraph6">En resumen, soy un desarrollador web apasionado, orientado a resultados y listo para enfrentar cualquier desafío que se presente. Siempre estoy en busca de oportunidades emocionantes para seguir aprendiendo y creciendo en el mundo del desarrollo web.</p> -->
+                </div>
+                    
+                <div class="row">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>NestJS</span>
+                            <span>PHP</span>
+                            <span>JAVA</span>
+                            <span>C</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="databasesTitle">Bases de datos</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MySQL</span>
+                            <span>SQLServer</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Cloud</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="trajectory">
+            <div class="top-header">
+                <h1 data-i18n="trajectory">Trayectoria</h1>
+            </div>
+            <div class="row">
+                <div class="about-info">
+                    <div class="container">
+                        <div class="experience">
+                          <div class="item">
+                            <h5 class="company-name" data-i18n="eurotransportcarTitle">Eurotransportcar servicios logisticos SL</h5>
+                            <div class="location"><i class="uil uil-laptop" aria-hidden="true"></i> <span data-i18n="eurotransportcarLocation">Hibrido</span></div>
+                            <div class="job-info">
+                              <div class="title"><span data-i18n="eurotransportcarJobTitle">Full-Stack</span></div>
+                              <div>2024</div>
+                            </div>
+                            <div class="mt-2">
+                              <ul class="fa-ul custom-list">
+                                <li data-i18n="eurotransportcarDescription">Formo parte del equipo de desarrollo encargado de crear y mantener el producto principal de una empresa líder en logística de transportes. En este rol, trabajo con tecnologías como HTML, Bootstrap, PHP y MySQL, desarrollando soluciones eficientes que optimizan procesos y mejoran la experiencia del usuario. Además, he contribuido al diseño y mantenimiento de interfaces intuitivas y funcionales, asegurando un producto de alta calidad que satisface las necesidades del mercado.</li>
+                              </ul>
+                            </div>
+                          </div>
+                      
+                          <div class="item">
+                            <h5 class="company-name" data-i18n="eurotransportcarPracticesTitle">Eurotransportcar servicios logisticos SL</h5>
+                            <div class="location"><i class="uil uil-laptop" aria-hidden="true"></i> <span data-i18n="eurotransportcarPracticesLocation">Hibrido</span></div>
+                            <div class="job-info">
+                              <div class="title" data-i18n="eurotransportcarPracticesJobTitle">Full-Stack (Prácticas)</div>
+                              <div>2024</div>
+                            </div>
+                            <div class="mt-2">
+                                <ul class="fa-ul custom-list">
+                                    <li data-i18n="eurotransportcarPracticesDescription">Inicié mi carrera profesional realizando mi formación en la empresa líder en logística de transportes, donde tuve la oportunidad de explorar y trabajar con tecnologías más allá de lo aprendido en mi formación universitaria. Durante este período, amplié mis conocimientos prácticos y adquirí experiencia real en el desarrollo y mantenimiento de soluciones web, lo que me permitió consolidar habilidades clave y entender mejor las necesidades tecnológicas del sector.</li>
+                                </ul>
+                            </div>
+                          </div>
+
+                          <div class="item">
+                            <h5 class="company-name" data-i18n="universidadDeCordobaTitle">Universidad de Córdoba</h5>
+                            <div class="location"><i class="uil uil-map-marker" aria-hidden="true"></i> <span data-i18n="universidadDeCordobaLocation">Córdoba</span></div>
+                            <div class="job-info">
+                              <div class="title" data-i18n="universidadDeCordobaJobTitle">Ingeniería Informática</div>
+                              <div>2023</div>
+                            </div>
+                            <div class="mt-2">
+                                <ul class="fa-ul custom-list">
+                                    <li data-i18n="universidadDeCordobaDescription">Durante mi etapa universitaria, me enfoqué en la ingeniería de software, colaborando en entornos ágiles con Scrum y Trello. Desarrollé habilidades en backend como Java, PHP o Python, y frontend con CSS, HTML y JavaScript. También gané experiencia en la gestión de bases de datos como MySQL o MongoDB. Esta formación sólida me preparó para abordar desafíos complejos con creatividad y eficacia.</li>
+                                </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1 data-i18n="projects">Proyectos</h1>
+          </div>
+          <div class="project-container">
+            
+            <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/ArenaAlly')">
+                <i class="uil uil-football" style="margin-bottom:-0.5em;"></i>
+                <h3 data-i18n="arenaAllyTitle">ArenaAlly</h3>
+                <label data-i18n="arenaAllyDescription">Aplicación web para la gestión de competiciones para una Federación de Balonmano</label>
+            </div>
+            
+            <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/Wordle')">
+                <i class="uil uil-font" style="margin-bottom:-0.5em;"></i>
+                <h3 data-i18n="wordleTitle">Wordle</h3>
+                <label data-i18n="wordleDescription">Aplicación web del famoso juego de adivinar palabras</label>
+            </div>
+            
+            <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/UcoDex')">
+                <i class="uil uil-calculator" style="margin-bottom:-0.5em;"></i>
+                <h3 data-i18n="ucoDexTitle">UcoDex</h3>
+                <label data-i18n="ucoDexDescription">Aplicación móvil de una enciclopedia Pokémon</label>
+            </div>
+
+            <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/University/tree/main/Redes/Practica%202')">
+                <i class="uil uil-book-open" style="margin-bottom:-0.5em;"></i>
+                <h3 data-i18n="adivinarRefranesTitle">Adivinar refranes</h3>
+                <label data-i18n="adivinarRefranesDescription">Juego de refranes mediante socket</label>
+            </div>
+
+            <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/Portfolio')">
+                <i class="uil uil-github-alt" style="margin-bottom:-0.5em;"></i>
+                <h3 data-i18n="portfolioTtile">Portfolio Personal</h3>
+                <label data-i18n="portfolioDescription">Proyecto de este portfolio</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+            <div class="top-header">
+                <h1 data-i18n="contact">Contacto</h1>
+                <span data-i18n="contactSubtitle">¿Tienes un proyecto en mente? ¡Contacta conmigo desde aquí!</span>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2><i class="uil uil-corner-left-down"></i> <span data-i18n="contactInfoTitle">Mis datos</span> <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> <span data-i18n="contactEmail">Correo electrónico: paiba2012@gmail.com</span></p>
+                        <p><i class="uil uil-phone"></i> <span data-i18n="contactPhone">Teléfono: 693 328 312</span></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <form action="/api/enviar-correo" method="post">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Nombre" name="nombre" data-i18n="nombrePlaceholder">
+                                <input type="text" class="input-field" placeholder="Correo electrónico" name="correo" data-i18n="correoPlaceholder">
+                            </div>
+                            <div class="text-area mt-1">
+                                <textarea placeholder="Mensaje" name="mensaje" data-i18n="mensajePlaceholder"></textarea>
+                            </div>                            
+                            <div class="form-button mt-1">
+                                <button class="btn" type="submit"><span data-i18n="contactSubmitButton">Enviar</span> <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-box contact-box">
+                    <i class="uil uil-award"></i>
+                    <h3 data-i18n="qualityTitle">Calidad</h3>
+                    <label data-i18n="qualityDescription">Desarrollos de alta calidad</label>
+                </div>
+                <div class="project-box contact-box">
+                    <i class="uil uil-lightbulb-alt"></i>
+                    <h3 data-i18n="innovationTitle">Innovación</h3>
+                    <label data-i18n="innovationDescription">Ideas frescas</label>
+                </div>
+                <div class="project-box contact-box">
+                    <i class="uil uil-chart-growth"></i>
+                    <h3 data-i18n="collaborationTitle">Colaboración</h3>
+                    <label data-i18n="collaborationDescription">Colaboramos para el éxito</label>
+                </div>
+            </div>                                
+        </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Pablo Ibañez Fdez-Delgado</a> - <span data-i18n="footerText">Todos los derechos reservados</span></p>
+        </div>
+    </footer>
+
+    </div>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -157,7 +157,7 @@ var translations = {
     contact: "Contacto",
     scheduleMeeting: "Programar Reunión",
     downloadCV: "Descargar CV",
-    discoverMore: "Descubre Más",
+    discoverMore: "Desliza!",
     name: "Pablo Ibañez Fdez-Delgado",
     developerDescription:
       "Soy un desarrollador web fullstack, especializado en backend en tecnologías como PHP y NodeJS y en frontend tecnologías como Html/Css/Javascript y React. Siempre trato de estar actualizado con las últimas tendencias tecnológicas para garantizar que mis soluciones sean adecuadas.",
@@ -246,7 +246,7 @@ var translations = {
     contact: "Contact",
     scheduleMeeting: "Schedule Meeting",
     downloadCV: "Download CV",
-    discoverMore: "Discover More",
+    discoverMore: "Slide!",
     name: "Pablo Ibañez Fdez-Delgado",
     developerDescription:
       "I am an experienced backend web developer, specialized in technologies like Python and Java. I stay updated with the latest technological trends to ensure my solutions are at the forefront.",
