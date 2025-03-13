@@ -1,6 +1,7 @@
 # Personal Portfolio
 
-![image](https://github.com/user-attachments/assets/85c51cb3-52fe-463a-b571-013eacae69d9)
+![image](https://github.com/user-attachments/assets/93280f15-c4f8-4f3d-b9a2-aac966b3a6a2)
+
 
 
 
