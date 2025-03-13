@@ -1,7 +1,6 @@
 # Personal Portfolio
 
 ![image](![image](https://github.com/user-attachments/assets/09fd1672-3a7c-407c-98cd-5f983630d456)
-)
 
 
 
