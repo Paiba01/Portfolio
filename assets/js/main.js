@@ -8,6 +8,28 @@
         menuBtn.className = "nav-menu";
       }
     }
+    
+    function closeMenuOnNavigate() {
+      // Obtener el elemento sidebar
+      var sidebar = document.querySelector(".sidebar");
+      
+      // Verificar si estamos en modo móvil (si el sidebar tiene la clase active)
+      if(sidebar && sidebar.classList.contains("active")) {
+        // Quitar la clase active para cerrar el sidebar
+        sidebar.classList.remove("active");
+      }
+    }
+    
+    // Agregar event listeners a todos los enlaces de navegación cuando la página se carga
+    document.addEventListener("DOMContentLoaded", function() {
+      // Seleccionar todos los enlaces de navegación en el sidebar
+      var navLinks = document.querySelectorAll(".sidebar-link");
+      
+      // Agregar el evento click a cada enlace
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", closeMenuOnNavigate);
+      });
+    });
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
     window.onscroll = function() {headerShadow()};
@@ -88,6 +110,17 @@
   srRight.reveal('.skills-box',{delay: 100})
   srRight.reveal('.form-control',{delay: 100})
   
+/* ----- TOGGLE SIDEBAR IN SMARTPHONE -----*/
+
+function toggleSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const toggleButton = document.querySelector(".sidebar-toggle");
+
+  sidebar.classList.toggle("active"); // Alterna la clase para mostrar u ocultar la barra
+
+  // Opcional: Mover el botón de menú cuando la barra está visible
+
+}
 
 
 /* ----- CHANGE ACTIVE LINK ----- */

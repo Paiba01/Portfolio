@@ -413,15 +413,27 @@ footer {
     }
 
     .sidebar-toggle {
-        display: block;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 1100;
-        background: var(--first-color);
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
+        display: flex !important; /* Aparece en móviles */
+        
+    }
+    
+    .sidebar-toggle:hover {
+        background: #19476d;
+    }
+    
+    /* Cuando la barra lateral está activa, mueve el botón */
+    .sidebar.active + .sidebar-toggle {
+        left: 20px; 
+    }
+    
+    /* Animación de la barra lateral */
+    .sidebar {
+        left: -1050px; 
+        transition: left 0.3s ease-in-out;
+    }
+    
+    .sidebar.active {
+        left: px; /* La muestra cuando está activa */
     }
 }
 
@@ -491,7 +503,23 @@ footer {
 }
 
 .sidebar-toggle {
-    display: none;
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 1em;
+    left: 0;
+    background: #0b355e;
+    color: white;
+    border: none;
+    padding: 12px; /* Ajustado para que cubra todo el borde */
+    width: 50px; /* Ajusta según el tamaño que quieras */
+    height: 50px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1100;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, left 0.3s ease;
 }
 
 /* ----- ABOUT INFO ----- */
