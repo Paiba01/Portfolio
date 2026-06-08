@@ -213,6 +213,11 @@ var translations = {
     paragraph6: 
       "En resumen, soy un desarrollador web apasionado, listo para enfrentar cualquier desafío que se presente. Siempre estoy en busca de oportunidades emocionantes para seguir aprendiendo y creciendo en el mundo del desarrollo web.",
     databasesTitle: "Bases de datos",
+    toolsTitle: "Herramientas",
+    languagesTitle: "Idiomas",
+    spanish: "Español",
+    spanishLevel: "Nativo",
+    english: "Inglés",
     eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
     eurotransportcarLocation: "Hibrido",
     eurotransportcarJobTitle: "Full-Stack",
@@ -310,6 +315,11 @@ var translations = {
     paragraph6: 
       "In short, I am a passionate web developer, ready to take on any challenge that comes my way. I am always looking for exciting opportunities to keep learning and growing in the world of web development.",
     databasesTitle: "Databases",
+    toolsTitle: "Tools",
+    languagesTitle: "Languages",
+    spanish: "Spanish",
+    spanishLevel: "Native",
+    english: "English",
     eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
     eurotransportcarLocation: "Hybrid",
     eurotransportcarJobTitle: "Full-Stack",
