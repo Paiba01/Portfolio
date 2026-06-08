@@ -66,22 +66,24 @@
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
    const sr = ScrollReveal({
           origin: 'top',
-          distance: '80px',
-          duration: 2000,
-          reset: true     
+          distance: '60px',
+          duration: 1200,
+          reset: false
    })
 
   /* -- HOME -- */
   sr.reveal('.featured-text-card',{})
   sr.reveal('.featured-name',{delay: 100})
   sr.reveal('.featured-text-info',{delay: 200})
-  sr.reveal('.featured-text-btn',{delay: 200})
-  sr.reveal('.social_icons',{delay: 200})
+  sr.reveal('.featured-stats',{delay: 250})
+  sr.reveal('.featured-text-btn',{delay: 300})
+  sr.reveal('.social_icons',{delay: 350})
   sr.reveal('.featured-image',{delay: 300})
-  
 
-  /* -- PROJECT BOX -- */
-  sr.reveal('.project-box',{interval: 200})
+
+  /* -- PROJECT / WORK CARDS -- */
+  sr.reveal('.project-box',{interval: 150})
+  sr.reveal('.work-card',{interval: 120})
 
   /* -- HEADINGS -- */
   sr.reveal('.top-header',{})
@@ -91,20 +93,20 @@
   /* -- ABOUT INFO & CONTACT INFO -- */
   const srLeft = ScrollReveal({
     origin: 'left',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+    distance: '60px',
+    duration: 1200,
+    reset: false
   })
-  
+
   srLeft.reveal('.about-info',{delay: 100})
   srLeft.reveal('.contact-info',{delay: 100})
 
   /* -- ABOUT SKILLS & FORM BOX -- */
   const srRight = ScrollReveal({
     origin: 'right',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+    distance: '60px',
+    duration: 1200,
+    reset: false
   })
   
   srRight.reveal('.skills-box',{delay: 100})
@@ -157,7 +159,7 @@ window.addEventListener("scroll", scrollActive);
 
       linkTemp.href = pathCV;
       linkTemp.target = '_blank';
-      linkTemp.download = 'curriculum-JoseAngelDorado.pdf';
+      linkTemp.download = 'curriculum-PabloIbanez.pdf';
       document.body.appendChild(linkTemp);
       linkTemp.click();
 
@@ -268,7 +270,15 @@ var translations = {
     innovationTitle: "Innovación",
     innovationDescription: "Ideas frescas",
     collaborationTitle: "Colaboración",
-    collabotarionDescription: "Colaboramos para el éxito",
+    collaborationDescription: "Colaboramos para el éxito",
+    statsProjects: "Proyectos",
+    statsTech: "Tecnologías",
+    statsExperience: "Desde",
+    viewCode: "Ver código",
+    present: "Actualidad",
+    formSuccess: "¡Mensaje enviado! Te responderé pronto.",
+    formError: "No se pudo enviar. Inténtalo de nuevo o escríbeme por correo.",
+    formSending: "Enviando...",
   },
   en: {
     language: "Español",
@@ -282,7 +292,7 @@ var translations = {
     discoverMore: "Slide!",
     name: "Pablo Ibañez Fdez-Delgado",
     developerDescription:
-      "I am an experienced backend web developer, specialized in technologies like Python and Java. I stay updated with the latest technological trends to ensure my solutions are at the forefront.",
+      "I am a full-stack web developer focused on the backend, specialized in technologies like PHP and NestJS. I love design, and on the frontend my specialties are HTML and React. My goal is to deliver the highest-quality solutions in my work.",
     aboutMe:
       "Hello, I'm Pablo Ibañez, a passionate full stack web developer with proven experience in the success of my own projects and in key contributions to the digital development of a renowned logistics and transport company. My ability to be fluent in both front-end and back-end allows me to easily adapt to different environments and challenges, always looking for innovative and effective solutions.",
     footerText:
@@ -345,6 +355,14 @@ var translations = {
     innovationDescription: "Fresh ideas",
     collaborationTitle: "Collaboration",
     collaborationDescription: "We collaborate for success",
+    statsProjects: "Projects",
+    statsTech: "Technologies",
+    statsExperience: "Since",
+    viewCode: "View code",
+    present: "Present",
+    formSuccess: "Message sent! I'll get back to you soon.",
+    formError: "Couldn't send it. Try again or email me directly.",
+    formSending: "Sending...",
   },
 };
 
@@ -389,3 +407,44 @@ function updateContent(language) {
     }
   });
 }
+
+/** Contact form — envío asíncrono con feedback */
+(function () {
+  var form = document.getElementById("contactForm");
+  if (!form) return;
+
+  var statusEl = document.getElementById("formStatus");
+
+  function t(key) {
+    var lang = document.documentElement.lang || "es";
+    return (translations[lang] && translations[lang][key]) || translations.es[key];
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var submitBtn = form.querySelector('button[type="submit"]');
+    statusEl.className = "form-status";
+    statusEl.textContent = t("formSending");
+    if (submitBtn) submitBtn.disabled = true;
+
+    fetch(form.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("Bad response");
+        statusEl.className = "form-status form-status--ok";
+        statusEl.textContent = t("formSuccess");
+        form.reset();
+      })
+      .catch(function () {
+        statusEl.className = "form-status form-status--error";
+        statusEl.textContent = t("formError");
+      })
+      .finally(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
+  });
+})();

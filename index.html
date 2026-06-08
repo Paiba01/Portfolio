@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- --------- SEO ---------- -->
+    <meta name="description" content="Portfolio de Pablo Ibáñez, desarrollador web full-stack especializado en backend con PHP y NestJS, y frontend con HTML y React. Descubre mis proyectos y contacta conmigo.">
+    <meta name="author" content="Pablo Ibáñez Fdez-Delgado">
+    <meta name="keywords" content="Pablo Ibáñez, desarrollador web, full-stack, backend, PHP, NestJS, React, portfolio">
+    <meta name="theme-color" content="#0a1730">
+    <link rel="canonical" href="https://portfoliopaiba.netlify.app/">
+
+    <!-- --------- OPEN GRAPH (LinkedIn / redes) ---------- -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pablo Ibáñez | Desarrollador Web Full-Stack">
+    <meta property="og:description" content="Desarrollador web full-stack especializado en backend (PHP, NestJS) y frontend (HTML, React). Descubre mis proyectos y contacta conmigo.">
+    <meta property="og:image" content="https://portfoliopaiba.netlify.app/assets/images/paiba-color-img.png">
+    <meta property="og:url" content="https://portfoliopaiba.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pablo Ibáñez | Desarrollador Web Full-Stack">
+    <meta name="twitter:description" content="Desarrollador web full-stack especializado en backend (PHP, NestJS) y frontend (HTML, React).">
+    <meta name="twitter:image" content="https://portfoliopaiba.netlify.app/assets/images/paiba-color-img.png">
+
     <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="assets/css/style3.css">
-    <link rel="stylesheet" href="assets/css/sidebar.css">
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <title>Portfolio de Pablo | Desarrollador y Programador Web</title>
+    <title>Pablo Ibáñez | Desarrollador Web Full-Stack (PHP · NestJS · React)</title>
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -64,19 +81,33 @@
                     </div>
                     <div class="featured-text-info">
                         <p data-i18n="developerDescription">Soy un desarrollador web enfocado en la parte del backend, especializado en tecnologías como PHP y NestJS. Me encanta diseñar y si hablamos de Frontend mis especialidades son Html y React  Mi objetivo es aportar soluciones con la mayor calidad en mi trabajo </p>
-                    </div>            
+                    </div>
+                    <div class="featured-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label" data-i18n="statsProjects">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label" data-i18n="statsTech">Tecnologías</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2024</span>
+                            <span class="stat-label" data-i18n="statsExperience">Desde</span>
+                        </div>
+                    </div>
                     <div class="featured-text-btn">
                         <button class="btn" id="scheduleMeetingBtn"><span data-i18n="scheduleMeeting">Programar Reunión</span> <i class="uil uil-meeting-board"></i></button>
                         <button class="btn" onclick="downloadCV()"><span data-i18n="downloadCV">Descargar CV</span> <i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
-                        <div class="icon"><a href="https://www.linkedin.com/in/pablo-iba%C3%B1ez-fern%C3%A1ndez-delgado-39039823b/"><i class="uil uil-linkedin-alt" style="font-size: 20px;"></i></a></div>
-                        <div class="icon"><a href="https://github.com/Paiba01"><i class="uil uil-github-alt" style="font-size: 20px;"></i></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/pablo-iba%C3%B1ez-fern%C3%A1ndez-delgado-39039823b/" target="_blank" rel="noopener" aria-label="LinkedIn de Pablo Ibáñez"><i class="uil uil-linkedin-alt" style="font-size: 20px;"></i></a></div>
+                        <div class="icon"><a href="https://github.com/Paiba01" target="_blank" rel="noopener" aria-label="GitHub de Pablo Ibáñez"><i class="uil uil-github-alt" style="font-size: 20px;"></i></a></div>
                     </div>
                 </div>
                 <div class="featured-image">
                     <div class="image ">
-                        <img src="assets/images/paiba-color-img.png" alt="Profile">
+                        <img src="assets/images/paiba-color-img.png" alt="Pablo Ibáñez, desarrollador web full-stack">
                     </div>
                 </div>
                 
@@ -161,12 +192,13 @@
                     <div class="about-info">
                         <div class="container">
                             <div class="experience">
-                              <div class="item">
+                              <div class="item item--current">
                                 <h5 class="company-name" data-i18n="eurotransportcarTitle">Eurotransportcar servicios logisticos SL</h5>
+                                <span class="current-badge"><span class="current-dot"></span><span data-i18n="present">Actualidad</span></span>
                                 <div class="location"><i class="uil uil-laptop" aria-hidden="true"></i> <span data-i18n="eurotransportcarLocation">Hibrido</span></div>
                                 <div class="job-info">
                                   <div class="title"><span data-i18n="eurotransportcarJobTitle">Full-Stack</span></div>
-                                  <div>2024</div>
+                                  <div>2024 — <span data-i18n="present">Actualidad</span></div>
                                 </div>
                                 <div class="mt-2">
                                   <ul class="fa-ul custom-list">
@@ -213,36 +245,66 @@
                 <div class="top-header">
                     <h1 data-i18n="projects">Proyectos</h1>
                 </div>
-                <div class="project-container">
-                    <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/ArenaAlly')">
-                        <i class="uil uil-football" style="margin-bottom:-0.5em;"></i>
-                        <h3 data-i18n="arenaAllyTitle">ArenaAlly</h3>
-                        <label data-i18n="arenaAllyDescription">Aplicación web para la gestión de competiciones para una Federación de Balonmano</label>
-                    </div>
-                    
-                    <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/Wordle')">
-                        <i class="uil uil-font" style="margin-bottom:-0.5em;"></i>
-                        <h3 data-i18n="wordleTitle">Wordle</h3>
-                        <label data-i18n="wordleDescription">Aplicación web del famoso juego de adivinar palabras</label>
-                    </div>
-                    
-                    <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/UcoDex')">
-                        <i class="uil uil-calculator" style="margin-bottom:-0.5em;"></i>
-                        <h3 data-i18n="ucoDexTitle">UcoDex</h3>
-                        <label data-i18n="ucoDexDescription">Aplicación móvil de una enciclopedia Pokémon</label>
-                    </div>
-        
-                    <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/University/tree/main/Redes/Practica%202')">
-                        <i class="uil uil-book-open" style="margin-bottom:-0.5em;"></i>
-                        <h3 data-i18n="adivinarRefranesTitle">Adivinar refranes</h3>
-                        <label data-i18n="adivinarRefranesDescription">Juego de refranes mediante socket</label>
-                    </div>
-        
-                    <div class="project-box" onclick="redirectProject('https://github.com/Paiba01/Portfolio')">
-                        <i class="uil uil-github-alt" style="margin-bottom:-0.5em;"></i>
-                        <h3 data-i18n="portfolioTtile">Portfolio Personal</h3>
-                        <label data-i18n="portfolioDescription">Proyecto de este portfolio</label>
-                    </div>
+                <div class="work-container">
+                    <a class="work-card" href="https://github.com/Paiba01/ArenaAlly" target="_blank" rel="noopener">
+                        <div class="work-cover work-cover--1">
+                            <img src="assets/images/arenaally.png" alt="Captura de la pantalla de inicio de ArenaAlly" loading="lazy">
+                        </div>
+                        <div class="work-body">
+                            <h3 data-i18n="arenaAllyTitle">ArenaAlly</h3>
+                            <p data-i18n="arenaAllyDescription">Aplicación web para la gestión de competiciones para una Federación de Balonmano</p>
+                            <div class="work-tags"><span>React</span><span>NestJS</span><span>MongoDB</span></div>
+                        </div>
+                        <span class="work-link"><i class="uil uil-github-alt"></i> <span data-i18n="viewCode">Ver código</span></span>
+                    </a>
+
+                    <a class="work-card" href="https://github.com/Paiba01/Wordle" target="_blank" rel="noopener">
+                        <div class="work-cover work-cover--2">
+                            <img src="assets/images/wordle-logo.jpg" alt="Captura del proyecto Wordle" loading="lazy">
+                        </div>
+                        <div class="work-body">
+                            <h3 data-i18n="wordleTitle">Wordle</h3>
+                            <p data-i18n="wordleDescription">Aplicación web del famoso juego de adivinar palabras</p>
+                            <div class="work-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                        </div>
+                        <span class="work-link"><i class="uil uil-github-alt"></i> <span data-i18n="viewCode">Ver código</span></span>
+                    </a>
+
+                    <a class="work-card" href="https://github.com/Paiba01/UcoDex" target="_blank" rel="noopener">
+                        <div class="work-cover work-cover--3">
+                            <i class="uil uil-mobile-android"></i>
+                        </div>
+                        <div class="work-body">
+                            <h3 data-i18n="ucoDexTitle">UcoDex</h3>
+                            <p data-i18n="ucoDexDescription">Aplicación móvil de una enciclopedia Pokémon</p>
+                            <div class="work-tags"><span>Java</span><span>Android</span></div>
+                        </div>
+                        <span class="work-link"><i class="uil uil-github-alt"></i> <span data-i18n="viewCode">Ver código</span></span>
+                    </a>
+
+                    <a class="work-card" href="https://github.com/Paiba01/University/tree/main/Redes/Practica%202" target="_blank" rel="noopener">
+                        <div class="work-cover work-cover--4">
+                            <i class="uil uil-book-open"></i>
+                        </div>
+                        <div class="work-body">
+                            <h3 data-i18n="adivinarRefranesTitle">Adivinar refranes</h3>
+                            <p data-i18n="adivinarRefranesDescription">Juego de refranes mediante socket</p>
+                            <div class="work-tags"><span>C</span><span>Sockets</span></div>
+                        </div>
+                        <span class="work-link"><i class="uil uil-github-alt"></i> <span data-i18n="viewCode">Ver código</span></span>
+                    </a>
+
+                    <a class="work-card" href="https://github.com/Paiba01/Portfolio" target="_blank" rel="noopener">
+                        <div class="work-cover work-cover--5">
+                            <i class="uil uil-desktop"></i>
+                        </div>
+                        <div class="work-body">
+                            <h3 data-i18n="portfolioTtile">Portfolio Personal</h3>
+                            <p data-i18n="portfolioDescription">Proyecto de este portfolio</p>
+                            <div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        </div>
+                        <span class="work-link"><i class="uil uil-github-alt"></i> <span data-i18n="viewCode">Ver código</span></span>
+                    </a>
                 </div>
             </section>
 
@@ -261,17 +323,21 @@
                     </div>
                     <div class="col">
                         <div class="form-control">
-                            <form action="/api/enviar-correo" method="post">
+                            <form id="contactForm" action="/api/enviar-correo" method="post">
                                 <div class="form-inputs">
-                                    <input type="text" class="input-field" placeholder="Nombre" name="nombre" data-i18n="nombrePlaceholder">
-                                    <input type="text" class="input-field" placeholder="Correo electrónico" name="correo" data-i18n="correoPlaceholder">
+                                    <label class="sr-only" for="nombre">Nombre</label>
+                                    <input id="nombre" type="text" class="input-field" placeholder="Nombre" name="nombre" data-i18n="nombrePlaceholder" required>
+                                    <label class="sr-only" for="correo">Correo electrónico</label>
+                                    <input id="correo" type="email" class="input-field" placeholder="Correo electrónico" name="correo" data-i18n="correoPlaceholder" required>
                                 </div>
                                 <div class="text-area mt-1">
-                                    <textarea placeholder="Mensaje" name="mensaje" data-i18n="mensajePlaceholder"></textarea>
-                                </div>                            
+                                    <label class="sr-only" for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" placeholder="Mensaje" name="mensaje" data-i18n="mensajePlaceholder" required></textarea>
+                                </div>
                                 <div class="form-button mt-1">
                                     <button class="btn" type="submit"><span data-i18n="contactSubmitButton">Enviar</span> <i class="uil uil-message"></i></button>
                                 </div>
+                                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
                             </form>
                         </div>
                     </div>
@@ -313,7 +379,5 @@
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
     
-    <!-- ----- SIDEBAR JS ----- -->
-    <script src="assets/js/sidebar.js"></script>
 </body>
 </html>
