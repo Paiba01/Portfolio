@@ -13,6 +13,9 @@
     --first-color-hover: rgb(15, 124, 168);
 
     --second-color: rgb(0, 201, 255);
+    --accent-color: rgb(139, 92, 246);
+    --accent-color-deep: rgb(124, 58, 237);
+    --brand-gradient: linear-gradient(90deg, rgb(0, 201, 255), rgb(124, 58, 237));
     --first-shadow-color: rgba(248, 248, 248, 0.1);
 }
 
@@ -1410,4 +1413,208 @@ h3 {
 }
 .job-tags {
   margin-top: 14px;
+}
+
+/* =====================================================
+   PALETA — cian + violeta
+   ===================================================== */
+
+/* ----- Fondo con brillos sutiles ----- */
+body {
+  background:
+    radial-gradient(900px circle at 85% 10%, rgba(124, 58, 237, 0.12), transparent 60%),
+    radial-gradient(800px circle at 10% 90%, rgba(0, 201, 255, 0.08), transparent 60%),
+    linear-gradient(to right, #080f1f, #0b1430);
+  background-attachment: fixed;
+}
+
+/* ----- Texto con degradado ----- */
+.sidebar-logo,
+.typedText,
+.featured-stats .stat-number {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----- Sidebar ----- */
+.sidebar {
+  background: linear-gradient(180deg, #0b2a4f, #161c48);
+  border-right: 1px solid rgba(139, 92, 246, 0.2);
+}
+.sidebar-link.active {
+  background: linear-gradient(90deg, rgba(0, 201, 255, 0.14), rgba(124, 58, 237, 0.14));
+  color: var(--second-color);
+  box-shadow: inset 3px 0 0 var(--accent-color);
+}
+.sidebar-toggle,
+.sidebar-toggle:hover {
+  background: linear-gradient(135deg, #0b2a4f, #2a1f6b);
+}
+
+/* ----- Botones e iconos ----- */
+.btn:hover,
+.sidebar-language-toggle button:hover,
+.icon:hover {
+  background: var(--brand-gradient);
+  color: var(--color-white);
+}
+.form-button > .btn {
+  background: var(--brand-gradient);
+}
+.form-button > .btn:hover {
+  background: #ffffff;
+  color: var(--accent-color-deep);
+}
+
+/* ----- Hero: segundo brillo violeta y anillo en la foto ----- */
+#home::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+  width: 360px;
+  height: 360px;
+  max-width: 50vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.16), transparent 70%);
+  filter: blur(10px);
+  z-index: 0;
+  pointer-events: none;
+  animation: heroGlow 10s ease-in-out infinite alternate-reverse;
+}
+.image {
+  padding: 5px;
+  background: var(--brand-gradient);
+  box-shadow: 0 10px 40px rgba(124, 58, 237, 0.25);
+}
+.featured-image .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* ----- Títulos de sección con subrayado ----- */
+.top-header h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 4px;
+  background: var(--brand-gradient);
+}
+
+/* ----- Trayectoria: línea en degradado ----- */
+.experience {
+  border-left: none;
+  background: linear-gradient(180deg, var(--second-color), var(--accent-color-deep)) left top / 3px 100% no-repeat;
+}
+.experience .company-name,
+.experience .job-info .title {
+  color: var(--second-color);
+}
+
+/* ----- Contacto ----- */
+.contact-info {
+  background: linear-gradient(135deg, var(--first-color), var(--accent-color-deep));
+}
+.project-box::after {
+  background: var(--brand-gradient);
+}
+.project-box > i {
+  color: var(--accent-color);
+}
+
+/* ----- Proyectos ----- */
+.work-cover--2 { background: linear-gradient(135deg, #00c9ff, #3b2a8c); }
+.work-cover--4 { background: linear-gradient(135deg, #2a1f6b, #1e9fab); }
+.work-cover--6 { background: linear-gradient(135deg, #7c3aed, #0b2a4f); }
+.work-link { color: var(--accent-color-deep); }
+.work-card:hover .work-link { background: rgba(124, 58, 237, 0.06); }
+.work-card--private { cursor: default; }
+.work-link--private { color: #6b7280; }
+.work-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+/* ----- Footer ----- */
+footer {
+  background: linear-gradient(90deg, #0b2a4f, #1c2260);
+  border-top: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+/* ----- Fotos: bloque IA, trayectoria y logo de proyecto ----- */
+.ai-highlight-photo {
+  flex-shrink: 0;
+  width: 170px;
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+}
+.ai-highlight-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 70% center;
+}
+@media only screen and (max-width: 900px) {
+  .ai-highlight { flex-wrap: wrap; }
+  .ai-highlight-text { flex: 1 1 260px; }
+  .ai-highlight-photo { width: 100%; }
+  .ai-highlight-photo img { aspect-ratio: 4 / 3; object-position: center 30%; }
+}
+.job-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+  max-width: 560px;
+}
+.job-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 201, 255, 0.3);
+  filter: saturate(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.job-photos img:hover {
+  transform: translateY(-4px);
+  filter: saturate(1.05);
+}
+.work-cover--logo {
+  background: #f1f3f7;
+}
+.work-cover.work-cover--logo img {
+  position: relative;
+  inset: auto;
+  width: auto;
+  height: 78%;
+  object-fit: contain;
+  z-index: 1;
+}
+.work-cover--logo::after { display: none; }
+.work-cover--logo .work-badge {
+  color: #ffffff;
+  background: var(--brand-gradient);
+  border: none;
 }
