@@ -1618,3 +1618,229 @@ footer {
   background: var(--brand-gradient);
   border: none;
 }
+
+/* =====================================================
+   PROYECTO DESTACADO — Lookea
+   ===================================================== */
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  margin-bottom: 4rem;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(0, 201, 255, 0.05));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.fp-info {
+  min-width: 0;
+  padding: 40px 36px;
+  color: #ffffff;
+}
+.fp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  border-radius: 20px;
+}
+.fp-title {
+  margin: 16px 0 2px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.fp-tagline {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #e7c9a0;
+}
+.fp-desc {
+  margin-bottom: 22px;
+  font-size: 15px;
+  color: #d6dee8;
+}
+.fp-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+.fp-features li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.fp-features li:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+.fp-features i {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffffff;
+  background: var(--brand-gradient);
+}
+.fp-features strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.fp-features span {
+  display: block;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #b9c6d6;
+}
+.fp-process {
+  margin-bottom: 22px;
+  padding-left: 14px;
+  font-size: 13.5px;
+  color: #b9c6d6;
+  border-left: 3px solid var(--accent-color);
+}
+.fp-process i {
+  color: var(--accent-color);
+}
+.fp-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+.fp-stats div {
+  display: flex;
+  flex-direction: column;
+}
+.fp-stat-number {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fp-stat-label {
+  font-size: 12px;
+  color: #b9c6d6;
+}
+.fp-tags span {
+  background: rgba(0, 201, 255, 0.1);
+  color: var(--second-color);
+}
+.fp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 26px;
+}
+.fp-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: var(--brand-gradient);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+}
+.fp-btn:hover {
+  color: var(--accent-color-deep);
+  background: #ffffff;
+}
+.fp-private {
+  font-size: 13px;
+  color: #8b97a8;
+}
+
+/* Lado visual: el color de fondo es el de las capturas de Lookea */
+.fp-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 20px;
+  background: radial-gradient(circle at 50% 40%, #fbf6ec, #f5eedf 65%);
+}
+.fp-logo {
+  width: 150px;
+  margin-bottom: 40px;
+
+}
+.fp-phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.fp-phones img {
+  width: 34%;
+  border-radius: 22px;
+  filter: drop-shadow(0 18px 30px rgba(74, 52, 30, 0.28));
+  transition: transform 0.5s ease;
+}
+.fp-phones img:nth-child(1) { transform: rotate(-7deg) translateX(22%); z-index: 1; }
+.fp-phones img:nth-child(2) { width: 38%; transform: translateY(-4%); z-index: 2; }
+.fp-phones img:nth-child(3) { transform: rotate(7deg) translateX(-22%); z-index: 1; }
+.featured-project:hover .fp-phones img:nth-child(1) { transform: rotate(-9deg) translateX(10%); }
+.featured-project:hover .fp-phones img:nth-child(2) { transform: translateY(-7%); }
+.featured-project:hover .fp-phones img:nth-child(3) { transform: rotate(9deg) translateX(-10%); }
+
+.fp-gallery {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 28px 36px 36px;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+}
+.fp-gallery img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fp-gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.projects-subtitle {
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .featured-project { grid-template-columns: minmax(0, 1fr); }
+  .fp-visual { order: -1; }
+  .fp-phones { max-width: 520px; }
+}
+@media only screen and (max-width: 640px) {
+  .fp-info { padding: 28px 20px; }
+  .fp-title { font-size: 32px; }
+  .fp-features { grid-template-columns: 1fr; }
+  .fp-stats { gap: 22px; }
+  .fp-gallery { grid-template-columns: repeat(2, 1fr); padding: 20px; gap: 12px; }
+}

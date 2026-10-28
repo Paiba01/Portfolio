@@ -92,7 +92,7 @@
                             <span class="stat-label" data-i18n="statsTech">Tecnologías</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">5+</span>
+                            <span class="stat-number">7</span>
                             <span class="stat-label" data-i18n="statsProjects">Proyectos</span>
                         </div>
                     </div>
@@ -308,19 +308,68 @@
                 <div class="top-header">
                     <h1 data-i18n="projects">Proyectos</h1>
                 </div>
+
+                <article class="featured-project">
+                    <div class="fp-info">
+                        <span class="fp-eyebrow"><span class="current-dot"></span><span data-i18n="fpEyebrow">Proyecto destacado · En producción</span></span>
+                        <h2 class="fp-title">Lookea</h2>
+                        <p class="fp-tagline" data-i18n="lookeaTagline">Tu armario, en tu bolsillo.</p>
+                        <p class="fp-desc" data-i18n="lookeaDescription">PWA <em>mobile-first</em> para digitalizar tu armario, montar outfits, preparar la maleta y pedir opinión a tus amigos antes de salir de casa. La he diseñado, desarrollado y desplegado de principio a fin, y está probada con usuarios reales.</p>
+
+                        <ul class="fp-features">
+                            <li><i class="uil uil-apps" aria-hidden="true"></i><div><strong data-i18n="lookeaF1Title">Armario</strong><span data-i18n="lookeaF1">Una prenda en tres toques. La foto es opcional y el fondo se elimina en el propio móvil.</span></div></li>
+                            <li><i class="uil uil-layer-group" aria-hidden="true"></i><div><strong data-i18n="lookeaF2Title">Outfits</strong><span data-i18n="lookeaF2">Conjuntos deslizando filas por zona del cuerpo, o uno propuesto al azar respetando lo que fijes.</span></div></li>
+                            <li><i class="uil uil-suitcase" aria-hidden="true"></i><div><strong data-i18n="lookeaF3Title">Maleta</strong><span data-i18n="lookeaF3">Calcula volumen y peso aproximados y se prepara con un checklist que tachas deslizando.</span></div></li>
+                            <li><i class="uil uil-star" aria-hidden="true"></i><div><strong data-i18n="lookeaF4Title">Estilista con IA</strong><span data-i18n="lookeaF4">Aprende tus gustos con un cuestionario y cada 👍/👎, y te propone outfits con tu propia ropa.</span></div></li>
+                        </ul>
+
+                        <p class="fp-process" data-i18n="lookeaProcess"><i class="uil uil-sitemap" aria-hidden="true"></i> Desarrollo <em>spec-driven</em> con Claude Code: especificación viva, glosario de dominio y ADRs. Lógica de negocio aislada del framework y cubierta por tests, aislamiento de datos entre usuarios y despliegue propio en VPS con Docker, nginx y Cloudflare.</p>
+
+                        <div class="fp-stats">
+                            <div><span class="fp-stat-number">120+</span><span class="fp-stat-label">Commits</span></div>
+                            <div><span class="fp-stat-number">280+</span><span class="fp-stat-label">Tests</span></div>
+                            <div><span class="fp-stat-number">PWA</span><span class="fp-stat-label" data-i18n="lookeaInstallable">Instalable</span></div>
+                        </div>
+
+                        <div class="work-tags fp-tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Tailwind</span><span>PostgreSQL</span><span>Drizzle ORM</span><span>Better Auth</span><span>Claude API</span><span>Web Push</span><span>Vitest</span><span>Docker</span></div>
+
+                        <div class="fp-actions">
+                            <a class="btn fp-btn" href="https://lookea.es" target="_blank" rel="noopener"><span data-i18n="lookeaCta">Probar Lookea</span> <i class="uil uil-external-link-alt"></i></a>
+                            <span class="fp-private"><i class="uil uil-lock-alt" aria-hidden="true"></i> <span data-i18n="privateRepo">Repositorio privado</span></span>
+                        </div>
+                    </div>
+
+                    <div class="fp-visual">
+                        <img class="fp-logo" src="assets/images/lookea/logo.png" alt="Logo de Lookea" loading="lazy">
+                        <div class="fp-phones">
+                            <img src="assets/images/lookea/armario-filas.jpg" alt="Lookea: armario agrupado por categorías" loading="lazy">
+                            <img src="assets/images/lookea/armario.jpg" alt="Lookea: vista en cuadrícula del armario" loading="lazy">
+                            <img src="assets/images/lookea/disenador.jpg" alt="Lookea: diseñador de outfits" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="fp-gallery">
+                        <img src="assets/images/lookea/estilista.jpg" alt="Lookea: el Estilista propone qué ponerte" loading="lazy">
+                        <img src="assets/images/lookea/comparar.jpg" alt="Lookea: pide a tus amigos que elijan entre tres outfits" loading="lazy">
+                        <img src="assets/images/lookea/de-frente.jpg" alt="Lookea: de tu foto a la prenda de frente" loading="lazy">
+                        <img src="assets/images/lookea/maleta.jpg" alt="Lookea: la maleta con consejos del Estilista" loading="lazy">
+                    </div>
+                </article>
+
+                <h3 class="projects-subtitle" data-i18n="otherProjects">Otros proyectos</h3>
                 <div class="work-container">
-                    <div class="work-card work-card--private">
+                    <a class="work-card" href="https://handassignball.com" target="_blank" rel="noopener">
                         <div class="work-cover work-cover--logo">
-                            <span class="work-badge" data-i18n="newBadge">Nuevo</span>
+                            <span class="work-badge" data-i18n="inProduction">En producción</span>
                             <img src="assets/images/handassignball-logo.png" alt="Logo de HandAssignBall" loading="lazy">
                         </div>
                         <div class="work-body">
                             <h3>HandAssignBall</h3>
-                            <p data-i18n="handAssignBallDescription">Plataforma para gestionar y designar árbitros de balonmano en varias delegaciones provinciales, con disponibilidades, roles y datos aislados por delegación</p>
+                            <p data-i18n="handAssignBallDescription">Plataforma en producción para designar árbitros de balonmano en tres delegaciones: disponibilidades, designaciones en PDF, liquidaciones, ranking y datos aislados por delegación</p>
                             <div class="work-tags"><span>React</span><span>TypeScript</span><span>NestJS</span><span>MySQL</span><span>TypeORM</span><span>Docker</span></div>
                         </div>
-                        <span class="work-link work-link--private"><i class="uil uil-lock-alt"></i> <span data-i18n="privateRepo">Repositorio privado</span></span>
-                    </div>
+                        <span class="work-link"><i class="uil uil-external-link-alt"></i> handassignball.com</span>
+                    </a>
 
                     <a class="work-card" href="https://github.com/Paiba01/ArenaAlly" target="_blank" rel="noopener">
                         <div class="work-cover work-cover--1">
