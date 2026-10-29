@@ -81,7 +81,6 @@
 
 
   /* -- PROJECT / WORK CARDS -- */
-  sr.reveal('.project-box',{interval: 150})
   sr.reveal('.work-card',{interval: 120})
 
   /* -- HEADINGS -- */
