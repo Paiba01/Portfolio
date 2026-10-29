@@ -65,14 +65,13 @@
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
    const sr = ScrollReveal({
-          origin: 'top',
-          distance: '60px',
-          duration: 1200,
+          origin: 'bottom',
+          distance: '24px',
+          duration: 700,
           reset: false
    })
 
   /* -- HOME -- */
-  sr.reveal('.featured-text-card',{})
   sr.reveal('.featured-name',{delay: 100})
   sr.reveal('.featured-text-info',{delay: 200})
   sr.reveal('.featured-stats',{delay: 250})
@@ -92,9 +91,9 @@
 
   /* -- ABOUT INFO & CONTACT INFO -- */
   const srLeft = ScrollReveal({
-    origin: 'left',
-    distance: '60px',
-    duration: 1200,
+    origin: 'bottom',
+    distance: '24px',
+    duration: 700,
     reset: false
   })
 
@@ -103,9 +102,9 @@
 
   /* -- ABOUT SKILLS & FORM BOX -- */
   const srRight = ScrollReveal({
-    origin: 'right',
-    distance: '60px',
-    duration: 1200,
+    origin: 'bottom',
+    distance: '24px',
+    duration: 700,
     reset: false
   })
   
@@ -217,7 +216,7 @@ var translations = {
     spanish: "Español",
     spanishLevel: "Nativo",
     english: "Inglés",
-    eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarTitle: "Eurotransportcar servicios logísticos SL",
     eurotransportcarLocation: "Híbrido",
     eurotransportcarJobTitle: "Full Stack Developer",
     eurotransportcarDescription: "Desarrollo y mantenimiento del SaaS de logística principal de la empresa, en producción activa.",
@@ -230,7 +229,7 @@ var translations = {
     eurotransportcarBullet5: "Estandaricé el formato de respuesta de la API REST en todos los endpoints, mejorando la consistencia y reduciendo el tiempo de integración de nuevos partners.",
     eurotransportcarBullet6: "Lideré la <strong>modernización del legacy</strong>: migración de Symfony 2.8 → 6.4 y PHP 7.1 → 8.1, introduciendo tests de caracterización como red de seguridad para refactorizar sin regresiones.",
     eurotransportcarBullet7: "Participo en todo el ciclo de desarrollo (análisis, implementación, code review y despliegue), organizando el trabajo en Jira/Monday.",
-    eurotransportcarPracticesTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarPracticesTitle: "Eurotransportcar servicios logísticos SL",
     eurotransportcarPracticesLocation: "Híbrido",
     eurotransportcarPracticesJobTitle: "Full-Stack (Prácticas)",
     eurotransportcarPracticesDescription: "Inicié mi carrera profesional realizando mi formación en la empresa líder en logística de transportes, donde tuve la oportunidad de explorar y trabajar con tecnologías más allá de lo aprendido en mi formación universitaria. Durante este período, amplié mis conocimientos prácticos y adquirí experiencia real en el desarrollo y mantenimiento de soluciones web, lo que me permitió consolidar habilidades clave y entender mejor las necesidades tecnológicas del sector.",
@@ -252,7 +251,7 @@ var translations = {
     institutoNacionalDeCiberseguridadJobTitle: "Ciberseguridad Teletrabajando",
     institutoNacionalDeCiberseguridadDescription: "En el curso de Ciberseguridad en el Teletrabajo, me sumergí en las estrategias esenciales para proteger la información en entornos remotos. Desde técnicas de prevención de amenazas hasta prácticas de seguridad digital, adquirí conocimientos sólidos para salvaguardar la integridad de los datos en el mundo del teletrabajo.",
     handAssignBallDescription: "Plataforma en producción para designar árbitros de balonmano en tres delegaciones: disponibilidades, designaciones en PDF, liquidaciones, ranking y datos aislados por delegación",
-    fpEyebrow: "Proyecto destacado · En producción",
+    fpEyebrow: "En producción",
     lookeaTagline: "Tu armario, en tu bolsillo.",
     lookeaDescription: "PWA <em>mobile-first</em> para digitalizar tu armario, montar outfits, preparar la maleta y pedir opinión a tus amigos antes de salir de casa. La he diseñado, desarrollado y desplegado de principio a fin, y está probada con usuarios reales.",
     lookeaF1Title: "Armario",
@@ -262,7 +261,7 @@ var translations = {
     lookeaF3Title: "Maleta",
     lookeaF3: "Calcula volumen y peso aproximados y se prepara con un checklist que tachas deslizando.",
     lookeaF4Title: "Estilista con IA",
-    lookeaF4: "Aprende tus gustos con un cuestionario y cada 👍/👎, y te propone outfits con tu propia ropa.",
+    lookeaF4: "Aprende tus gustos con un cuestionario y cada «me gusta» o «no me gusta», y te propone outfits con tu propia ropa.",
     lookeaProcess: "<i class=\"uil uil-sitemap\" aria-hidden=\"true\"></i> Desarrollo <em>spec-driven</em> con Claude Code: especificación viva, glosario de dominio y ADRs. Lógica de negocio aislada del framework y cubierta por tests, aislamiento de datos entre usuarios y despliegue propio en VPS con Docker, nginx y Cloudflare.",
     lookeaInstallable: "Instalable",
     lookeaCta: "Probar Lookea",
@@ -346,7 +345,7 @@ var translations = {
     spanish: "Spanish",
     spanishLevel: "Native",
     english: "English",
-    eurotransportcarTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarTitle: "Eurotransportcar servicios logísticos SL",
     eurotransportcarLocation: "Hybrid",
     eurotransportcarJobTitle: "Full Stack Developer",
     eurotransportcarDescription: 
@@ -360,7 +359,7 @@ var translations = {
     eurotransportcarBullet5: "Standardized the REST API response format across all endpoints, improving consistency and reducing integration time for new partners.",
     eurotransportcarBullet6: "Led the <strong>legacy modernization</strong>: migration path from Symfony 2.8 → 6.4 and PHP 7.1 → 8.1, introducing characterization tests as a safety net to refactor without regressions.",
     eurotransportcarBullet7: "Take part in the full SDLC (analysis, implementation, code review and deployment), organizing daily work in Jira/Monday.",
-    eurotransportcarPracticesTitle: "Eurotransportcar servicios logisticos SL",
+    eurotransportcarPracticesTitle: "Eurotransportcar servicios logísticos SL",
     eurotransportcarPracticesLocation: "Hybrid",
     eurotransportcarPracticesJobTitle: "Full-Stack (Internship)",
     eurotransportcarPracticesDescription: 
@@ -372,7 +371,7 @@ var translations = {
     universidadDeCordobaDescription: 
       "Computer Engineering degree with a major in Software Engineering. Solid background in algorithms, data structures, databases and agile methodologies (Scrum), working with Java, JavaScript, C, C++, SQL and Bash.",
     handAssignBallDescription: "Production platform to assign handball referees across three delegations: availability, designation PDFs, settlements, rankings and data isolated per delegation",
-    fpEyebrow: "Featured project · Live in production",
+    fpEyebrow: "Live in production",
     lookeaTagline: "Your wardrobe, in your pocket.",
     lookeaDescription: "A <em>mobile-first</em> PWA to digitize your wardrobe, put outfits together, pack your suitcase and ask friends for their opinion before heading out. I designed, built and deployed it end to end, and it has been tested with real users.",
     lookeaF1Title: "Wardrobe",
@@ -382,7 +381,7 @@ var translations = {
     lookeaF3Title: "Suitcase",
     lookeaF3: "Estimates volume and weight, then you pack with a checklist you tick off by swiping.",
     lookeaF4Title: "AI Stylist",
-    lookeaF4: "Learns your taste from a quiz and every 👍/👎, and suggests outfits using your own clothes.",
+    lookeaF4: "Learns your taste from a quiz and every like and dislike, and suggests outfits using your own clothes.",
     lookeaProcess: "<i class=\"uil uil-sitemap\" aria-hidden=\"true\"></i> <em>Spec-driven</em> development with Claude Code: living spec, domain glossary and ADRs. Business logic isolated from the framework and covered by tests, per-user data isolation and self-hosted deployment on a VPS with Docker, nginx and Cloudflare.",
     lookeaInstallable: "Installable",
     lookeaCta: "Try Lookea",

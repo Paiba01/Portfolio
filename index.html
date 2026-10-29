@@ -62,8 +62,11 @@
 
     </nav>
 
+    <!-- Barra superior en móvil: marca + botón de menú -->
+    <div class="mobile-bar" aria-hidden="true">&lt;/Paiba&gt;</div>
+
     <!-- Botón de toggle para móviles -->
-    <button class="sidebar-toggle" onclick="toggleSidebar()">
+    <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Abrir menú">
         <i class="uil uil-bars"></i>
     </button>
 
@@ -73,9 +76,7 @@
             <!-- Sección de Inicio -->
             <section class="featured-box" id="home">
                 <div class="featured-text">
-                    <div class="featured-text-card">
-                        <span>Pablo Ibañez</span>
-                    </div>
+                    <h1 class="hero-name">Pablo Ibáñez</h1>
                     <div class="featured-name">
                         <p><span class="typedText"></span></p>
                     </div>
@@ -116,7 +117,7 @@
             <!-- Resto de secciones (Sobre mí, Trayectoria, Proyectos, Contacto) -->
             <section class="section" id="about">
                 <div class="top-header" style="margin-bottom:2em;">
-                    <h1 data-i18n="about">Sobre mí</h1>
+                    <h2 data-i18n="about">Sobre mí</h2>
                 </div>
                 <div class="row">
                     <div class="about-info">
@@ -129,7 +130,6 @@
                         </div>
 
                         <div class="ai-highlight">
-                            <div class="ai-highlight-icon"><i class="uil uil-robot" aria-hidden="true"></i></div>
                             <div class="ai-highlight-text">
                                 <h3 data-i18n="aiTitle">Desarrollo asistido por IA</h3>
                                 <p data-i18n="aiDescription">Tengo un conocimiento profundo del proceso de desarrollo con IA y la integro en mi día a día: uso agentes de código como <strong>Claude Code</strong> y modelos de <strong>OpenAI</strong> para analizar código legacy, generar tests, refactorizar, revisar PRs y acelerar la entrega sin sacrificar calidad. Sé configurar estos agentes para cada proyecto: instrucciones de contexto (CLAUDE.md / AGENTS.md), <strong>skills</strong> personalizadas para tareas recurrentes, hooks y permisos. Así automatizo lo mecánico y dedico más tiempo a lo que aporta valor, sabiendo cuándo delegar en la IA, cómo darle buen contexto y cómo validar lo que produce.</p>
@@ -250,14 +250,14 @@
 
             <section class="section" id="trajectory">
                 <div class="top-header">
-                    <h1 data-i18n="trajectory">Trayectoria</h1>
+                    <h2 data-i18n="trajectory">Trayectoria</h2>
                 </div>
                 <div class="row">
                     <div class="about-info">
                         <div class="container">
                             <div class="experience">
                               <div class="item item--current">
-                                <h5 class="company-name" data-i18n="eurotransportcarTitle">Eurotransportcar servicios logisticos SL</h5>
+                                <h5 class="company-name" data-i18n="eurotransportcarTitle">Eurotransportcar servicios logísticos SL</h5>
                                 <span class="current-badge"><span class="current-dot"></span><span data-i18n="present">Actualidad</span></span>
                                 <div class="location"><i class="uil uil-laptop" aria-hidden="true"></i> <span data-i18n="eurotransportcarLocation">Híbrido</span></div>
                                 <div class="job-info">
@@ -306,12 +306,11 @@
 
             <section class="section" id="projects">
                 <div class="top-header">
-                    <h1 data-i18n="projects">Proyectos</h1>
+                    <h2 data-i18n="projects">Proyectos</h2>
                 </div>
 
                 <article class="featured-project">
                     <div class="fp-info">
-                        <span class="fp-eyebrow"><span class="current-dot"></span><span data-i18n="fpEyebrow">Proyecto destacado · En producción</span></span>
                         <h2 class="fp-title">Lookea</h2>
                         <p class="fp-tagline" data-i18n="lookeaTagline">Tu armario, en tu bolsillo.</p>
                         <p class="fp-desc" data-i18n="lookeaDescription">PWA <em>mobile-first</em> para digitalizar tu armario, montar outfits, preparar la maleta y pedir opinión a tus amigos antes de salir de casa. La he diseñado, desarrollado y desplegado de principio a fin, y está probada con usuarios reales.</p>
@@ -320,7 +319,7 @@
                             <li><i class="uil uil-apps" aria-hidden="true"></i><div><strong data-i18n="lookeaF1Title">Armario</strong><span data-i18n="lookeaF1">Una prenda en tres toques. La foto es opcional y el fondo se elimina en el propio móvil.</span></div></li>
                             <li><i class="uil uil-layer-group" aria-hidden="true"></i><div><strong data-i18n="lookeaF2Title">Outfits</strong><span data-i18n="lookeaF2">Conjuntos deslizando filas por zona del cuerpo, o uno propuesto al azar respetando lo que fijes.</span></div></li>
                             <li><i class="uil uil-suitcase" aria-hidden="true"></i><div><strong data-i18n="lookeaF3Title">Maleta</strong><span data-i18n="lookeaF3">Calcula volumen y peso aproximados y se prepara con un checklist que tachas deslizando.</span></div></li>
-                            <li><i class="uil uil-star" aria-hidden="true"></i><div><strong data-i18n="lookeaF4Title">Estilista con IA</strong><span data-i18n="lookeaF4">Aprende tus gustos con un cuestionario y cada 👍/👎, y te propone outfits con tu propia ropa.</span></div></li>
+                            <li><i class="uil uil-star" aria-hidden="true"></i><div><strong data-i18n="lookeaF4Title">Estilista con IA</strong><span data-i18n="lookeaF4">Aprende tus gustos con un cuestionario y cada «me gusta» o «no me gusta», y te propone outfits con tu propia ropa.</span></div></li>
                         </ul>
 
                         <p class="fp-process" data-i18n="lookeaProcess"><i class="uil uil-sitemap" aria-hidden="true"></i> Desarrollo <em>spec-driven</em> con Claude Code: especificación viva, glosario de dominio y ADRs. Lógica de negocio aislada del framework y cubierta por tests, aislamiento de datos entre usuarios y despliegue propio en VPS con Docker, nginx y Cloudflare.</p>
@@ -335,6 +334,7 @@
 
                         <div class="fp-actions">
                             <a class="btn fp-btn" href="https://lookea.es" target="_blank" rel="noopener"><span data-i18n="lookeaCta">Probar Lookea</span> <i class="uil uil-external-link-alt"></i></a>
+                            <span class="fp-live"><span class="current-dot"></span><span data-i18n="fpEyebrow">En producción</span></span>
                             <span class="fp-private"><i class="uil uil-lock-alt" aria-hidden="true"></i> <span data-i18n="privateRepo">Repositorio privado</span></span>
                         </div>
                     </div>
@@ -435,13 +435,13 @@
 
             <section class="section" id="contact">
                 <div class="top-header">
-                    <h1 data-i18n="contact">Contacto</h1>
+                    <h2 data-i18n="contact">Contacto</h2>
                     <span data-i18n="contactSubtitle">¿Tienes un proyecto en mente? ¡Contacta conmigo desde aquí!</span>
                 </div>
                 <div class="row mb-4">
                     <div class="col">
                         <div class="contact-info">
-                            <h2><i class="uil uil-corner-left-down"></i> <span data-i18n="contactInfoTitle">Mis datos</span> <i class="uil uil-corner-right-down"></i></h2>
+                            <h3><span data-i18n="contactInfoTitle">Mis datos</span></h3>
                             <p><i class="uil uil-envelope"></i> <span data-i18n="contactEmail">Correo electrónico: paiba.dev@gmail.com</span></p>
                             <p><i class="uil uil-phone"></i> <span data-i18n="contactPhone">Teléfono: 693 328 312</span></p>
                         </div>
@@ -465,23 +465,6 @@
                                 <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
                             </form>
                         </div>
-                    </div>
-                </div>
-                <div class="project-container">
-                    <div class="project-box contact-box">
-                        <i class="uil uil-award"></i>
-                        <h3 data-i18n="qualityTitle">Calidad</h3>
-                        <label data-i18n="qualityDescription">Desarrollos de alta calidad</label>
-                    </div>
-                    <div class="project-box contact-box">
-                        <i class="uil uil-lightbulb-alt"></i>
-                        <h3 data-i18n="innovationTitle">Innovación</h3>
-                        <label data-i18n="innovationDescription">Ideas frescas</label>
-                    </div>
-                    <div class="project-box contact-box">
-                        <i class="uil uil-chart-growth"></i>
-                        <h3 data-i18n="collaborationTitle">Colaboración</h3>
-                        <label data-i18n="collaborationDescription">Colaboramos para el éxito</label>
                     </div>
                 </div>
             </section>

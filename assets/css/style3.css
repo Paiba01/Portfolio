@@ -1846,6 +1846,396 @@ footer {
 }
 
 /* =====================================================
+   ESTILO PLANO — un fondo, un texto, un acento (cian).
+   Las superficies se separan por tono, no por bordes,
+   sombras ni degradados.
+   ===================================================== */
+:root {
+  --ground: #0a1228;
+  --surface: #111b36;
+  --surface-2: #1a2649;
+  --surface-3: #22315c;
+  --ink: #f2f5fa;
+  --ink-2: #b9c6d6;
+  --accent: #00c9ff;
+  --accent-hover: #5cdcff;
+  --accent-ink: #04121f;
+  --live: #4ade80;
+}
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;
+  letter-spacing: -0.01em;
+}
+a:hover, a:focus { border: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ----- Navegación ----- */
+.sidebar {
+  background: var(--surface);
+  border-right: none;
+}
+.sidebar-logo {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--accent);
+}
+.sidebar-link:hover { background: var(--surface-2); color: var(--ink); }
+.sidebar-link.active {
+  background: var(--surface-2);
+  box-shadow: none;
+  color: var(--accent);
+}
+.sidebar-toggle,
+.sidebar-toggle:hover { background: var(--surface-2); }
+.mobile-bar { display: none; }
+
+/* ----- Botones: planos y redondos ----- */
+.btn {
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink);
+  box-shadow: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+.btn:hover,
+.sidebar-language-toggle button:hover {
+  background: var(--surface-3);
+  color: var(--ink);
+}
+.btn:active { transform: scale(0.97); }
+#scheduleMeetingBtn,
+.form-button > .btn,
+.fp-btn {
+  background: var(--accent);
+  color: var(--accent-ink);
+  box-shadow: none;
+}
+#scheduleMeetingBtn:hover,
+.form-button > .btn:hover,
+.fp-btn:hover {
+  background: var(--accent-hover);
+  color: var(--accent-ink);
+}
+.icon {
+  background: var(--surface-2);
+  box-shadow: none;
+  transition: background-color 0.2s ease;
+}
+.icon a, .icon i { color: var(--ink); }
+.icon:hover { background: var(--accent); }
+.icon:hover a, .icon:hover i { color: var(--accent-ink); }
+
+/* ----- Portada: el nombre manda ----- */
+#home::before,
+#home::after { display: none; }
+.hero-name {
+  margin: 0;
+  font-size: clamp(44px, 6.2vw, 96px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+.featured-name {
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 600;
+  margin-block: 18px 20px;
+}
+.typedText,
+.featured-stats .stat-number,
+.fp-stat-number {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+}
+.typedText { color: var(--accent); }
+.featured-text-info {
+  max-width: 56ch;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.featured-stats .stat-number { color: var(--ink); font-size: 32px; }
+.featured-stats .stat-label { font-size: 14px; color: var(--ink-2); }
+.image {
+  padding: 0;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+/* ----- Títulos de sección: grandes, a la izquierda, sin subrayado ----- */
+.top-header { text-align: left; }
+.top-header h2 {
+  margin-bottom: 12px;
+  font-size: clamp(34px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.top-header span {
+  font-size: 17px;
+  color: var(--ink-2);
+}
+
+/* ----- Sobre mí ----- */
+.about-info { align-items: stretch; }
+.about-info p {
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.ai-highlight {
+  background: var(--surface);
+  border: none;
+  border-radius: 20px;
+  gap: 32px;
+  padding: 32px;
+}
+.ai-highlight-text h3 {
+  margin-bottom: 12px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.ai-highlight-text p { max-width: 68ch; color: var(--ink); }
+.ai-highlight-photo {
+  border: none;
+  box-shadow: none;
+  border-radius: 14px;
+}
+
+/* ----- Habilidades ----- */
+.skills-header h3 { font-size: 20px; }
+.skills-list { gap: 8px; }
+.skills-list span,
+.skills-box--ai .skills-list span {
+  padding: 5px 14px;
+  font-size: 14px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink);
+}
+.language-info { font-size: 16px; }
+.language-level { font-size: 14px; color: var(--accent); }
+.language-bar { background: var(--surface-2); }
+.language-bar span { background: var(--accent); }
+
+/* ----- Trayectoria ----- */
+.experience {
+  background: none;
+  border-left: 2px solid var(--surface-3);
+}
+.experience .item::before {
+  left: -42px;
+  background: var(--ground);
+  border-color: var(--accent);
+}
+.experience .item::after { left: -36px; background: var(--accent); }
+.experience .item--current::before { border-color: var(--live); }
+.experience .item--current::after { background: var(--live); animation: livePulse 1.8s ease-in-out infinite; }
+.experience .company-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.experience .job-info .title { color: var(--accent); font-weight: 600; }
+.experience .job-duration { font-size: 14px; color: var(--ink-2); }
+.current-badge {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  background: none;
+  border: none;
+}
+.current-dot {
+  box-shadow: none;
+  animation: livePulse 1.8s ease-in-out infinite;
+}
+@keyframes livePulse {
+  50% { opacity: 0.35; }
+}
+.job-summary { font-size: 17px; line-height: 1.65; }
+.job-achievements li { font-size: 16px; line-height: 1.65; color: var(--ink); }
+.job-tags span { background: var(--surface-2); color: var(--ink); }
+.job-photos img { border: none; }
+
+/* ----- Proyecto destacado ----- */
+.featured-project {
+  border: none;
+  background: var(--surface);
+  box-shadow: none;
+}
+.fp-title {
+  margin-top: 0;
+  font-size: clamp(40px, 4.4vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.fp-tagline { font-size: 20px; }
+.fp-desc { font-size: 16px; line-height: 1.65; color: var(--ink); }
+.fp-features { gap: 22px 28px; }
+.fp-features li {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.fp-features li:hover { transform: none; }
+.fp-features i { display: none; }
+.fp-features strong { margin-bottom: 4px; font-size: 17px; }
+.fp-features span { font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+.fp-process {
+  padding-left: 0;
+  border-left: none;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.fp-process i { color: var(--accent); }
+.fp-stat-number { font-size: 32px; color: var(--ink); }
+.fp-stat-label { font-size: 14px; }
+.fp-tags span { background: var(--surface-2); color: var(--ink); }
+.fp-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--live);
+}
+.fp-private { font-size: 14px; }
+.fp-visual { background: #f8f2e6; }
+.fp-phones img { filter: none; }
+.fp-gallery { border-top: none; padding-top: 8px; }
+.fp-gallery img:hover { box-shadow: none; }
+.projects-subtitle {
+  margin: 24px 0 24px;
+  font-size: clamp(26px, 2.6vw, 36px);
+  letter-spacing: -0.02em;
+}
+
+/* ----- Otros proyectos: tarjetas planas sobre el fondo ----- */
+.work-card {
+  background: var(--surface);
+  box-shadow: none;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.work-card:hover {
+  transform: translateY(-6px);
+  background: var(--surface-2);
+  box-shadow: none;
+}
+.work-cover::after { display: none; }
+.work-cover--1 { background: #1498cc; }
+.work-cover--2 { background: #0d4f73; }
+.work-cover--3 { background: #1e9fab; }
+.work-cover--4 { background: #19476d; }
+.work-cover--5 { background: #0b355e; }
+.work-cover--logo { background: #f1f3f7; }
+.work-body h3 { font-size: 20px; color: var(--ink); }
+.work-body p { font-size: 15px; line-height: 1.6; color: var(--ink-2); }
+.work-tags span { font-size: 13px; background: var(--surface-2); color: var(--ink); }
+.work-card:hover .work-tags span { background: var(--surface-3); }
+.work-link {
+  border-top: none;
+  font-size: 15px;
+  color: var(--accent);
+}
+.work-card:hover .work-link { background: none; }
+.work-badge,
+.work-cover--logo .work-badge {
+  padding: 4px 10px;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--accent-ink);
+  background: var(--live);
+  border: none;
+  border-radius: 6px;
+  backdrop-filter: none;
+}
+
+/* ----- Contacto ----- */
+.contact-info {
+  height: auto;
+  min-height: 0;
+  padding: 32px;
+  align-items: flex-start;
+  background: var(--surface);
+  box-shadow: none;
+  border-radius: 20px;
+}
+.contact-info::after { display: none; }
+.contact-info > h3 { margin-bottom: 18px; font-size: 24px; color: var(--ink); }
+.contact-info > p { font-size: 17px; color: var(--ink); }
+.contact-info p > i { color: var(--accent); }
+.input-field,
+textarea {
+  border: 2px solid var(--surface-3);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 16px;
+}
+.input-field:focus,
+textarea:focus { border-color: var(--accent); }
+
+/* ----- Pie ----- */
+footer {
+  background: var(--surface);
+  border-top: none;
+}
+
+/* ----- Portada alineada con el resto de secciones ----- */
+.featured-box { padding-inline: 4em; }
+.featured-text-info { font-size: 18px; }
+.sidebar-language-toggle button { background: var(--surface-2); color: var(--ink); }
+footer .bottom-footer { padding-inline: 20px; }
+.social_icons { margin-top: 32px; gap: 16px; }
+.contact-info { justify-content: flex-start; }
+
+/* ----- Tablet y móvil: barra superior fija con la marca y el menú ----- */
+@media only screen and (max-width: 900px) {
+  html { scroll-padding-top: 64px; }
+  .mobile-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--ground);
+    z-index: 1050;
+  }
+  .sidebar-toggle {
+    top: 8px;
+    left: auto;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  .sidebar.active + .mobile-bar + .sidebar-toggle { left: auto; }
+  .main-content { padding: 0; }
+  .section { padding: 72px 32px 0; }
+  .featured-box { padding-inline: 32px; }
+  .featured-image { justify-content: flex-start; }
+  .about-info { padding-inline: 0; }
+}
+
+/* =====================================================
    MÓVIL (≤ 640px) — una sola capa para el teléfono.
    Un único margen de 20px a cada lado: el texto usa todo
    el ancho en vez de columnas estrechas y alargadas.
@@ -1859,24 +2249,15 @@ footer {
   footer { position: static; }
   .row { gap: 32px; }
   .top-header { margin-bottom: 32px !important; }
-  .top-header h1 { font-size: 26px; }
+  .top-header h2 { font-size: 34px; }
 
-  .sidebar-toggle {
-    top: 12px;
-    left: 12px;
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    font-size: 22px;
-    background: rgba(11, 20, 48, 0.85);
-  }
 
   /* ----- Hero: compacto y alineado a la izquierda ----- */
   .featured-box {
     height: auto;
     min-height: 0;
     max-height: none;
-    padding: 76px 20px 8px;
+    padding: 92px 20px 8px;
     align-items: stretch;
   }
   .featured-image {
@@ -1894,7 +2275,6 @@ footer {
     min-height: 0;
     padding: 0;
   }
-  .featured-text-card span { font-size: 15px; }
   .featured-name {
     font-size: 24px;
     line-height: 1.2;
@@ -1951,11 +2331,11 @@ footer {
 
   /* ----- Trayectoria: línea pegada al margen ----- */
   .about-info .container { padding-bottom: 0; }
-  .experience { margin-left: 0; padding: 0 0 0 22px; }
+  .experience { margin-left: 12px; padding: 0 0 0 22px; }
   .experience .item { margin-bottom: 48px; }
-  .experience .item::before { left: -31px; }
-  .experience .item::after { left: -26px; }
-  .experience .company-name { font-size: 15px; line-height: 1.35; }
+  .experience .item::before { left: -34px; }
+  .experience .item::after { left: -28px; }
+  .experience .company-name { font-size: 19px; line-height: 1.3; }
   .experience .job-info { width: auto; margin: 6px 0 14px; }
   .job-summary { font-size: 16px; line-height: 1.6; }
   .job-achievements li,
@@ -1977,29 +2357,8 @@ footer {
     padding: 28px 22px;
     align-items: flex-start;
   }
-  .contact-info > p { word-break: break-word; }
+  .contact-info > p { word-break: break-word; font-size: 16px; }
   textarea { height: 160px; }
   .form-button .btn { width: 100%; padding: 14px; }
 
-  /* Calidad / Innovación / Colaboración: filas compactas en vez de tres tarjetas altas */
-  .project-container { flex-direction: column; gap: 12px; margin-top: 32px; }
-  .project-box.contact-box {
-    display: grid;
-    grid-template-columns: 44px 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 14px;
-    align-items: center;
-    justify-items: start;
-    width: 100%;
-    height: auto;
-    padding: 18px 20px;
-    text-align: left;
-  }
-  .contact-box > i {
-    grid-row: 1 / 3;
-    margin: 0;
-    font-size: 34px;
-  }
-  .contact-box > h3 { margin: 0; font-size: 16px; }
-  .contact-box > label { margin: 0; padding: 0; font-size: 14px; }
 }
