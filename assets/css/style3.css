@@ -1844,3 +1844,162 @@ footer {
   .fp-stats { gap: 22px; }
   .fp-gallery { grid-template-columns: repeat(2, 1fr); padding: 20px; gap: 12px; }
 }
+
+/* =====================================================
+   MÓVIL (≤ 640px) — una sola capa para el teléfono.
+   Un único margen de 20px a cada lado: el texto usa todo
+   el ancho en vez de columnas estrechas y alargadas.
+   ===================================================== */
+@media only screen and (max-width: 640px) {
+  /* ----- Marco ----- */
+  .main-content { padding: 0; }
+  .section { padding: 64px 20px 0; }
+  .container { padding-bottom: 0; }
+  #contact { padding-bottom: 64px; }
+  footer { position: static; }
+  .row { gap: 32px; }
+  .top-header { margin-bottom: 32px !important; }
+  .top-header h1 { font-size: 26px; }
+
+  .sidebar-toggle {
+    top: 12px;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 22px;
+    background: rgba(11, 20, 48, 0.85);
+  }
+
+  /* ----- Hero: compacto y alineado a la izquierda ----- */
+  .featured-box {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    padding: 76px 20px 8px;
+    align-items: stretch;
+  }
+  .featured-image {
+    order: 1;
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 20px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .image, .image img { width: 112px; height: 112px; }
+  .featured-text {
+    order: 2;
+    width: 100%;
+    min-height: 0;
+    padding: 0;
+  }
+  .featured-text-card span { font-size: 15px; }
+  .featured-name {
+    font-size: 24px;
+    line-height: 1.2;
+    min-height: 1.2em;
+    margin-block: 14px 16px;
+  }
+  .featured-text-info {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .featured-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .featured-stats .stat-number { font-size: 26px; }
+  .featured-stats .stat-label { font-size: 13px; line-height: 1.3; }
+  .featured-text-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .featured-text-btn .btn { padding: 14px 10px; }
+  .featured-text-btn .btn > i { display: none; }
+  .social_icons { margin-top: 24px; gap: 14px; }
+  .icon { width: 48px; height: 48px; }
+
+  /* ----- Sobre mí ----- */
+  .about-info {
+    padding: 0;
+    align-items: stretch;
+    border-radius: 0;
+  }
+  .about-info p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .ai-highlight {
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .ai-highlight-text p { font-size: 15px; line-height: 1.65; }
+
+  /* ----- Habilidades ----- */
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .skills-header { margin-bottom: 12px; }
+  .skills-list { gap: 6px; }
+  .skills-list span { font-size: 14px; padding: 4px 12px; }
+
+  /* ----- Trayectoria: línea pegada al margen ----- */
+  .about-info .container { padding-bottom: 0; }
+  .experience { margin-left: 0; padding: 0 0 0 22px; }
+  .experience .item { margin-bottom: 48px; }
+  .experience .item::before { left: -31px; }
+  .experience .item::after { left: -26px; }
+  .experience .company-name { font-size: 15px; line-height: 1.35; }
+  .experience .job-info { width: auto; margin: 6px 0 14px; }
+  .job-summary { font-size: 16px; line-height: 1.6; }
+  .job-achievements li,
+  .experience .custom-list li { font-size: 15px; line-height: 1.6; }
+  .job-photos { max-width: none; }
+
+  /* ----- Proyectos ----- */
+  .fp-info { padding: 24px 20px; }
+  .fp-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .work-container { grid-template-columns: 1fr; gap: 16px; }
+
+  /* ----- Contacto ----- */
+  .contact-info {
+    height: auto;
+    padding: 28px 22px;
+    align-items: flex-start;
+  }
+  .contact-info > p { word-break: break-word; }
+  textarea { height: 160px; }
+  .form-button .btn { width: 100%; padding: 14px; }
+
+  /* Calidad / Innovación / Colaboración: filas compactas en vez de tres tarjetas altas */
+  .project-container { flex-direction: column; gap: 12px; margin-top: 32px; }
+  .project-box.contact-box {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 14px;
+    align-items: center;
+    justify-items: start;
+    width: 100%;
+    height: auto;
+    padding: 18px 20px;
+    text-align: left;
+  }
+  .contact-box > i {
+    grid-row: 1 / 3;
+    margin: 0;
+    font-size: 34px;
+  }
+  .contact-box > h3 { margin: 0; font-size: 16px; }
+  .contact-box > label { margin: 0; padding: 0; font-size: 14px; }
+}
